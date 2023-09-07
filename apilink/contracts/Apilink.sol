@@ -5,14 +5,15 @@ contract Apilink {
     
     string private apispec;
     address private user;
+    bool private toInvoke;
 
     constructor() {
         apispec = "";
+        toInvoke = false;
     }
 
     event invoked(
-        string invokedApiSpec,
-        address invokingUser
+        bool invoke
     );
 
     function setApiSpec(
@@ -22,8 +23,13 @@ contract Apilink {
         require(bytes(_apispec).length != 0, "Spec cannot be empty");    
 
         apispec = _apispec;
-        user = msg.sender;
+        user = msg.sender;        
+        toInvoke = true;
+        
+        emit invoked(toInvoke);
+    }
 
-        emit invoked(apispec, user);
+    function getApiSpec() external view returns (string memory){
+        return apispec;
     }
 }

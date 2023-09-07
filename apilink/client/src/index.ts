@@ -6,7 +6,7 @@ let provider = new ethers.providers.JsonRpcProvider()
 let contractAddr = '0x5fbdb2315678afecb367f032d93f642f64180aa3'
 let contract = new ethers.Contract(contractAddr, abi, provider)
 
-var pvtKey = process.env.CLIENT_KEY
+var pvtKey = process.env.CLIENT_KEY || ''
 
 
 const invokeApi = async (apiSpec: string) => {
@@ -31,7 +31,7 @@ const invokeApi = async (apiSpec: string) => {
     isTxnMined(tx.hash)
 }
 
-invokeApi('No pancakes!')
+invokeApi('Hello World!')
   
 
   
