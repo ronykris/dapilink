@@ -2,8 +2,8 @@ import {ethers} from 'ethers'
 
 const { abi } = require('./Apilink.json')
 
-let provider = new ethers.providers.JsonRpcProvider()
-let contractAddr = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
+let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
+let contractAddr = '0x5086B891fFf929591d6914b25E9145FfE7bC207f'
 let contract = new ethers.Contract(contractAddr, abi, provider)
 
 contract.on('invoked', async(event) => {

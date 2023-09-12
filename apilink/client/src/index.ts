@@ -1,9 +1,9 @@
 import { ethers }from 'ethers'
-
+import * as sapphire from '@oasisprotocol/sapphire-paratime'
 const { abi } = require('./Apilink.json')
 
-let provider = new ethers.providers.JsonRpcProvider()
-let contractAddr = '0x5fbdb2315678afecb367f032d93f642f64180aa3'
+let provider = sapphire.wrap(new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev"))
+let contractAddr = '0x5086B891fFf929591d6914b25E9145FfE7bC207f'
 let contract = new ethers.Contract(contractAddr, abi, provider)
 
 var pvtKey = process.env.CLIENT_KEY || ''
@@ -31,7 +31,7 @@ const invokeApi = async (apiSpec: string) => {
     isTxnMined(tx.hash)
 }
 
-invokeApi('Hello World!')
+invokeApi('Nothing to see here')
   
 
   

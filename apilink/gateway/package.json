@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
-    "start": "tsc -p . && ts-node src/index.ts"
+    "start": "tsc -p . && ts-node src/index.ts",
+    "decode": "tsc -p . && ts-node src/decode.ts"
   },
   "keywords": [],
   "author": "",
