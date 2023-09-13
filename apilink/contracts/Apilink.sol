@@ -16,17 +16,17 @@ contract Apilink {
         bool invoke
     );
 
-    function setApiSpec(
-        string calldata _apispec
-    
-    ) external {
-        require(bytes(_apispec).length != 0, "Spec cannot be empty");    
+    function setApiSpec(string calldata _apispec) external payable {
+
+        require(bytes(_apispec).length != 0, "Spec cannot be empty");
+        require(msg.value >= 395720000000000, "Not enough dough was supplied");
 
         apispec = _apispec;
         user = msg.sender;        
         toInvoke = true;
         
         emit invoked(toInvoke);
+        toInvoke = false; //Reset
     }
 
     function getApiSpec() external view returns (string memory){
