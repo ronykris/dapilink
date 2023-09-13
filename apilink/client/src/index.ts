@@ -3,7 +3,7 @@ import * as sapphire from '@oasisprotocol/sapphire-paratime'
 const { abi } = require('./Apilink.json')
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
-let contractAddr = '0xAba3309C377Dd299E00BeD319c54D3104D44497d'
+let contractAddr = '0x7e49c974CFa3774AcbD68059AcF36e2D284e108B'
 
 
 var pvtKey = process.env.CLIENT_KEY || ''
@@ -34,7 +34,7 @@ const invokeApi = async (apiSpec: string) => {
     isTxnMined(tx.hash)
 }
 
-invokeApi('Never say never again!')
+invokeApi('Tomorrow never dies!')
   
 
   

@@ -21,12 +21,12 @@ contract Apilink {
         require(bytes(_apispec).length != 0, "Spec cannot be empty");
         require(msg.value >= 395720000000000, "Not enough dough was supplied");
 
-        apispec = _apispec;
         user = msg.sender;        
         toInvoke = true;
         
         emit invoked(toInvoke);
         toInvoke = false; //Reset
+        apispec = _apispec;
     }
 
     function getApiSpec() external view returns (string memory){
