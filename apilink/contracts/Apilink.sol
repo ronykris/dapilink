@@ -11,6 +11,7 @@ contract Apilink {
     bool private loggedIn;
     
     uint256 private index;
+    uint256 private nodeCount;
     
     struct apicalldetails {        
         string endpoint;
@@ -28,13 +29,15 @@ contract Apilink {
     mapping (address => mapping(uint256 => apicalldetails)) private apicalls;    
 
     mapping(address => nodeDetails) private nodes;
+    mapping(address => uint256) private nodeIndexes;
     address[] private nodeList;    
 
     constructor() {                
         toInvoke = false; 
         callid = 0;  
         loggedIn = false;
-        index = 0;                      
+        index = 0;            
+        nodeCount = 0;           
     }    
 
     event invoked(
@@ -43,7 +46,9 @@ contract Apilink {
         uint256 nodeIndex
     );
 
-    event passcodeSet(bool passwordset);
+    event logInSuccess(bool passwordset, uint256 n_index);
+
+    event logInStatus(bool loginStatus);
 
     function createApiCall(uint256 _callid, string calldata _endpoint, string calldata _method, string calldata _body, string calldata _headers) external payable {
         require(_callid > 0, "Call id cannot be null");
@@ -62,9 +67,6 @@ contract Apilink {
 
         toInvoke = false; //Reset        
         apicalls[msg.sender][_callid] = apicalldetails(_endpoint, _method, _body, _headers);
-
-        
-
     }
 
     function getApiSpec(address _user, uint256 _id) external view returns (apicalldetails memory){
@@ -76,11 +78,12 @@ contract Apilink {
         require(bytes(_nodeName).length > 0, "Nodename cannot be empty");
 
         nodes[msg.sender] = nodeDetails(_nodeName, string(abi.encodePacked(msg.sender, _passcode)));   
-        nodeList.push(msg.sender);     
+        nodeList.push(msg.sender);        
+        nodeIndexes[msg.sender] = nodeCount;              
         isPasscodeSet = true;
 
-        emit passcodeSet(isPasscodeSet);
-        
+        emit logInSuccess(isPasscodeSet, nodeCount);
+        nodeCount += 1;        
         isPasscodeSet = false;        
     }
 
@@ -90,7 +93,7 @@ contract Apilink {
             "No pancakes for you"
         );
         loggedIn = true;
-        return loggedIn;
+        emit logInStatus(loggedIn);
     }
 
     function chosenNode() internal returns (uint256) {
