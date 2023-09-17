@@ -9,7 +9,8 @@ contract Apilink {
     
     bool private isPasscodeSet;
     bool private loggedIn;
-    uint private nodeid;
+    
+    uint256 private index;
     
     struct apicalldetails {        
         string endpoint;
@@ -27,17 +28,19 @@ contract Apilink {
     mapping (address => mapping(uint256 => apicalldetails)) private apicalls;    
 
     mapping(address => nodeDetails) private nodes;
-    //nodeDetails[] private nodes;    
+    address[] private nodeList;    
 
     constructor() {                
         toInvoke = false; 
         callid = 0;  
-        loggedIn = false;                      
+        loggedIn = false;
+        index = 0;                      
     }    
 
     event invoked(
         bool invoke,
-        uint256 id
+        uint256 id,
+        uint256 nodeIndex
     );
 
     event passcodeSet(bool passwordset);
@@ -55,10 +58,13 @@ contract Apilink {
         toInvoke = true;
         callid = _callid;
 
-        emit invoked(toInvoke, _callid);
+        emit invoked(toInvoke, _callid, chosenNode());
 
         toInvoke = false; //Reset        
         apicalls[msg.sender][_callid] = apicalldetails(_endpoint, _method, _body, _headers);
+
+        
+
     }
 
     function getApiSpec(address _user, uint256 _id) external view returns (apicalldetails memory){
@@ -69,7 +75,8 @@ contract Apilink {
         require(bytes(_passcode).length > 0, "Passcode cannot be empty");
         require(bytes(_nodeName).length > 0, "Nodename cannot be empty");
 
-        nodes[msg.sender] = nodeDetails(_nodeName, string(abi.encodePacked(msg.sender, _passcode)));        
+        nodes[msg.sender] = nodeDetails(_nodeName, string(abi.encodePacked(msg.sender, _passcode)));   
+        nodeList.push(msg.sender);     
         isPasscodeSet = true;
 
         emit passcodeSet(isPasscodeSet);
@@ -84,6 +91,12 @@ contract Apilink {
         );
         loggedIn = true;
         return loggedIn;
+    }
+
+    function chosenNode() internal returns (uint256) {
+        require(nodeList.length > 0, "No items available");
+        index = (index + 1) % nodeList.length;
+        return index;
     }
 
 }
