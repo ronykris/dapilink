@@ -6,11 +6,10 @@ contract Apilink {
     address private user;
     bool private toInvoke;
     uint256 private callid;
-    string private password;
+    
     bool private isPasscodeSet;
-    address private node;
-    string private nodeName;
     bool private loggedIn;
+    uint private nodeid;
     
     struct apicalldetails {        
         string endpoint;
@@ -18,11 +17,18 @@ contract Apilink {
         string body;  
         string headers;
     }
+
+    struct nodeDetails {
+        address nodeAddr;
+        string nodeName;
+        string password;
+    }
     //apicalldetails[] private jobs;
     apicalldetails api = apicalldetails("", "GET", "", "");
     mapping (address => mapping(uint256 => apicalldetails)) private apicalls;    
 
-    mapping(address => string) private pswdMgr;
+    //mapping(address => string) private pswdMgr;
+    nodeDetails[] private nodes;    
 
     constructor() {                
         toInvoke = false; 
@@ -60,24 +66,22 @@ contract Apilink {
         return apicalls[_user][_id];
     }
 
-    function login(string calldata _passcode) external {
+    function login(string calldata _passcode, string calldata _nodeName) external {
         require(bytes(_passcode).length > 0, "Passcode cannot be empty");
+        require(bytes(_nodeName).length > 0, "Nodename cannot be empty");
 
-        node = msg.sender;        
+        nodes.push(nodeDetails({node: msg.sender, nodeName: _nodeName, password: string(abi.encodePacked(msg.sender, _passcode))});)        
         isPasscodeSet = true;
 
         emit passcodeSet(isPasscodeSet);
-
-        isPasscodeSet = false;
-        password =  string(abi.encodePacked(node, _passcode));
-        pswdMgr[node] = password;
-
+        
+        isPasscodeSet = false;        
     }
 
     function isLoggedIn(string calldata _code) external returns (bool) {
         require(
-            keccak256(bytes(password)) == keccak256(bytes(string(abi.encodePacked(msg.sender, _code)))),
-            "Doesn't match"
+            keccak256(password) == keccak256(string(abi.encodePacked(msg.sender, _code))),
+            "No pancakes for you"
         );
         loggedIn = true;
         return loggedIn;
