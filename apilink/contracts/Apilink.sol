@@ -87,7 +87,7 @@ contract Apilink {
         isPasscodeSet = false;        
     }
 
-    function isLoggedIn(string calldata _code) external returns (bool) {
+    function isLoggedIn(string calldata _code) external {
         require(
             keccak256(bytes(nodes[msg.sender].password)) == keccak256(bytes(string(abi.encodePacked(msg.sender, _code)))),
             "No pancakes for you"
