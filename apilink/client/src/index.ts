@@ -41,6 +41,7 @@ const invokeApi = async (api: apiSpec) => {
     }
     isTxnMined(tx.hash)
 }
-  
+
+export default invokeApi;  
 
   
