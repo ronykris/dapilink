@@ -11,11 +11,19 @@ var overrides = {
   value: ethers.utils.parseEther('0.01')
 }
 
-const invokeApi = async (apiSpec: string) => {    
+interface apiSpec {
+  callid: string,
+  endpoint: string,
+  method: string,
+  body?: string,
+  headers?: string
+}
+
+const invokeApi = async (api: apiSpec) => {    
     let wallet = sapphire.wrap(new ethers.Wallet(pvtKey, provider))
     let contract = new ethers.Contract(contractAddr, abi, wallet)
     let contractWithSigner = contract.connect(wallet)
-    const tx = await contractWithSigner.createApiCall(apiSpec, overrides)
+    const tx = await contractWithSigner.createApiCall(api, overrides)
     console.log(tx)     
     
     const isTxnMined = async (txnHash: string) => {
@@ -33,8 +41,6 @@ const invokeApi = async (apiSpec: string) => {
     }
     isTxnMined(tx.hash)
 }
-
-invokeApi('Tomorrow never dies!')
   
 
   
