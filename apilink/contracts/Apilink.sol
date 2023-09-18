@@ -42,13 +42,12 @@ contract Apilink {
 
     event invoked(
         bool invoke,
-        uint256 id,
-        uint256 nodeIndex
+        uint256 id
     );
 
-    event logInSuccess(bool passwordset, uint256 n_index);
+    event logInSuccess(bool passwordset);
 
-    event logInStatus(bool loginStatus);
+    //event logInStatus(bool loginStatus);
 
     function createApiCall(uint256 _callid, string calldata _endpoint, string calldata _method, string calldata _body, string calldata _headers) external payable {
         require(_callid > 0, "Call id cannot be null");
@@ -63,7 +62,7 @@ contract Apilink {
         toInvoke = true;
         callid = _callid;
 
-        emit invoked(toInvoke, _callid, chosenNode());
+        emit invoked(toInvoke, _callid);
 
         toInvoke = false; //Reset        
         apicalls[msg.sender][_callid] = apicalldetails(_endpoint, _method, _body, _headers);
@@ -82,24 +81,28 @@ contract Apilink {
         nodeIndexes[msg.sender] = nodeCount;              
         isPasscodeSet = true;
 
-        emit logInSuccess(isPasscodeSet, nodeCount);
+        emit logInSuccess(isPasscodeSet);
         nodeCount += 1;        
         isPasscodeSet = false;        
     }
 
-    function isLoggedIn(string calldata _code) external {
+    function getNodeId(address _node) external view returns (uint256) {
+        return nodeIndexes[_node];
+    }
+
+    function isLoggedIn(string calldata _code) external returns (bool){
         require(
             keccak256(bytes(nodes[msg.sender].password)) == keccak256(bytes(string(abi.encodePacked(msg.sender, _code)))),
             "No pancakes for you"
         );
         loggedIn = true;
-        emit logInStatus(loggedIn);
+        //emit logInStatus(loggedIn);
+        return loggedIn;
     }
 
-    function chosenNode() internal returns (uint256) {
+    function getChosenNode() external returns (uint256) {
         require(nodeList.length > 0, "No items available");
         index = (index + 1) % nodeList.length;
         return index;
     }
-
 }

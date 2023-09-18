@@ -1,11 +1,12 @@
 {
-  "name": "gateway",
+  "name": "node",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
+    "login": "tsc -p . && ts-node src/login.ts",
     "start": "tsc -p . && ts-node src/index.ts",
     "decode": "tsc -p . && ts-node src/decode.ts"
   },

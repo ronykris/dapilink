@@ -23,7 +23,7 @@ const invokeApi = async (api: apiSpec) => {
     let wallet = sapphire.wrap(new ethers.Wallet(pvtKey, provider))
     let contract = new ethers.Contract(contractAddr, abi, wallet)
     let contractWithSigner = contract.connect(wallet)
-    const tx = await contractWithSigner.createApiCall(api, overrides)
+    const tx = await contractWithSigner.createApiCall(api.callid, api.endpoint, api.method, api.body, api.headers, overrides)
     console.log(tx)     
     
     const isTxnMined = async (txnHash: string) => {
