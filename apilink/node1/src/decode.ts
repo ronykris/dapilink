@@ -3,7 +3,7 @@ import {ethers} from 'ethers'
 const { abi } = require('./Apilink.json')
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
-let contractAddr = '0x6C462036d8CfE3a4935D7f4694aAE0b746406db7'
+let contractAddr = '0xF4216590273fbfcb19a016d24AD8f20038e742fA'
 let contract = new ethers.Contract(contractAddr, abi, provider)
 
 const getData = async (txHash: string) => {

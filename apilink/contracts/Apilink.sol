@@ -61,11 +61,12 @@ contract Apilink {
         user = msg.sender;        
         toInvoke = true;
         callid = _callid;
-
+        setChosenNode();
         emit invoked(toInvoke, _callid);
 
         toInvoke = false; //Reset        
         apicalls[msg.sender][_callid] = apicalldetails(_endpoint, _method, _body, _headers);
+        
     }
 
     function getApiSpec(address _user, uint256 _id) external view returns (apicalldetails memory){
@@ -77,16 +78,17 @@ contract Apilink {
         require(bytes(_nodeName).length > 0, "Nodename cannot be empty");
 
         nodes[msg.sender] = nodeDetails(_nodeName, string(abi.encodePacked(msg.sender, _passcode)));   
-        nodeList.push(msg.sender);        
-        nodeIndexes[msg.sender] = nodeCount;              
+        nodeList.push(msg.sender);                        
         isPasscodeSet = true;
 
-        emit logInSuccess(isPasscodeSet);
-        nodeCount += 1;        
+        emit logInSuccess(isPasscodeSet);                      
+        
+        nodeCount += 1;  
+        nodeIndexes[msg.sender] = nodeCount;              
         isPasscodeSet = false;        
     }
 
-    function getNodeId(address _node) external view returns (uint256) {
+    function getNodeId(address _node) external view returns (uint256) {        
         return nodeIndexes[_node];
     }
 
@@ -100,9 +102,12 @@ contract Apilink {
         return loggedIn;
     }
 
-    function getChosenNode() external returns (uint256) {
+    function setChosenNode() internal {
         require(nodeList.length > 0, "No items available");
-        index = (index + 1) % nodeList.length;
+        index = ((index + 1) % nodeList.length) + 1;        
+    }
+
+    function getChosenNode() external view returns (uint256) {
         return index;
     }
 }

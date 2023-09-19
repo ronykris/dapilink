@@ -3,7 +3,7 @@ import * as sapphire from '@oasisprotocol/sapphire-paratime'
 const { abi } = require('./Apilink.json')
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
-let contractAddr = '0x6C462036d8CfE3a4935D7f4694aAE0b746406db7'
+let contractAddr = '0xF4216590273fbfcb19a016d24AD8f20038e742fA'
 
 var nodeKey = process.env.NODE_KEY || ''
 var code = process.env.CODE || ''
@@ -22,12 +22,14 @@ const login = async (code: string, nodeName: string) => {
     let wallet = sapphire.wrap(new ethers.Wallet(nodeKey, provider))
     let contract = new ethers.Contract(contractAddr, abi, wallet)
     let contractWithSigner = contract.connect(wallet)
-    let node = await contractWithSigner.getNodeId()
-    if (node) {        
+    let node = await contractWithSigner.getNodeId(wallet.address)
+    console.log(node._hex)
+    if (node._hex !== '0x00') {        
         console.log('Node already present, nothing to do...')
         if (!process.env.NODEID) {
-            process.env.NODEID = node            
+            process.env.NODEID = node._hex            
             console.log('NodeID set...')
+            console.log(process.env.NODEID)
         }
     } else {
         const tx = await contractWithSigner.login(code, nodeName)
@@ -39,8 +41,8 @@ const login = async (code: string, nodeName: string) => {
                 if (txnreceipt.blockNumber) {
                     console.log('Txn Block: ', txnreceipt.blockNumber)
                     console.log('Txn: ', txnreceipt)
-                    node = await contractWithSigner.getNodeId()
-                    console.log('Node ID: ', node)
+                    node = await contractWithSigner.getNodeId(wallet.address)
+                    console.log('Node ID: ', node._hex)
                     process.env.NODEID = node
                     console.log('NodeID set...')
                 }
