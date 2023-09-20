@@ -23,6 +23,7 @@ const invokeApi = async (api: apiSpec) => {
     let wallet = sapphire.wrap(new ethers.Wallet(pvtKey, provider))
     let contract = new ethers.Contract(contractAddr, abi, wallet)
     let contractWithSigner = contract.connect(wallet)
+    console.log(`CallID: ${api.callid}; endpoint: ${api.endpoint}; method: ${api.method}; body: ${api.body}; headers: ${api.headers}`)
     const tx = await contractWithSigner.createApiCall(api.callid, api.endpoint, api.method, api.body, api.headers, overrides)
     console.log(tx)     
     

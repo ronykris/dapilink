@@ -1,6 +1,8 @@
 import {ethers} from 'ethers'
 import * as sapphire from '@oasisprotocol/sapphire-paratime'
+import dotenv from 'dotenv'
 const { abi } = require('./Apilink.json')
+dotenv.config()
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
 let contractAddr = '0xF4216590273fbfcb19a016d24AD8f20038e742fA'

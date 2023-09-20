@@ -1,5 +1,8 @@
 import {ethers} from 'ethers'
 import * as sapphire from '@oasisprotocol/sapphire-paratime'
+import {spawnSync} from "child_process"
+import  dotenv from 'dotenv'
+dotenv.config()
 const { abi } = require('./Apilink.json')
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
@@ -11,6 +14,18 @@ var code = process.env.CODE || ''
 var overrides = {
   value: ethers.utils.parseEther('0.01')
 }*/
+
+const setEnv = async (envVar: string, value: string) => {
+    let updateEnvCmd = `echo ${envVar}=${value} >> .env`
+    var env = spawnSync('bash', ['-c', updateEnvCmd])
+    if (env.error) {
+        throw new Error('Error updating bashrc: ' + env.error.message)
+    }
+    if (env.status != 0) {
+        throw new Error('Failed to update bashrc ' + env.status)
+    }        
+    dotenv.config()
+}
 
 const login = async (code: string, nodeName: string) => {
     if ( !process.env.CODE ) {
@@ -27,7 +42,7 @@ const login = async (code: string, nodeName: string) => {
     if (node._hex !== '0x00') {        
         console.log('Node already present, nothing to do...')
         if (!process.env.NODEID) {
-            process.env.NODEID = node._hex            
+            await setEnv('NODEID', node._hex)     
             console.log('NodeID set...')
             console.log(process.env.NODEID)
         }
