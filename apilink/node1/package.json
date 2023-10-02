@@ -8,7 +8,8 @@
     "build": "tsc -p .",
     "login": "tsc -p . && ts-node src/login.ts",
     "start": "tsc -p . && ts-node src/index.ts",
-    "decode": "tsc -p . && ts-node src/decode.ts"
+    "decode": "tsc -p . && ts-node src/decode.ts",
+    "listen": "tsc -p . && ts-node src/eventListener.ts"
   },
   "keywords": [],
   "author": "",

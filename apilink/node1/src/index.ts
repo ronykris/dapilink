@@ -1,11 +1,12 @@
 import {ethers} from 'ethers'
 import * as sapphire from '@oasisprotocol/sapphire-paratime'
 import dotenv from 'dotenv'
-const { abi } = require('./Apilink.json')
+
+const { abi } = require('../../artifacts/contracts/Apilink.sol/Apilink.json')
 dotenv.config()
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
-let contractAddr = '0xF4216590273fbfcb19a016d24AD8f20038e742fA'
+let contractAddr = process.env.CONTRACT
 
 var nodeKey = process.env.NODE_KEY || ''
 var code = process.env.CODE || ''
@@ -18,19 +19,21 @@ const invoke = async () => {
     contractWithSigner.on('invoked', async(status, id) => {
         console.log(status + ',' + id)
         if (status === true) {        
-            let node = await contractWithSigner.getChosenNode()
+            let node = await contractWithSigner.getChosenNode(id)
             console.log(node._hex)
             console.log(process.env.NODEID)
             if ( node._hex === process.env.NODEID ) {
-                let isLoggedIn = await contractWithSigner.isLoggedIn(code)
-                console.log('Is logged in: ', isLoggedIn)
-                if ( isLoggedIn ) { 
-                    let apiSpec = await contractWithSigner.getApiSpec(wallet.address, id)
-                    console.log('API Spec', apiSpec)
-                }
+                let isLoggedInTx = await contractWithSigner.isLoggedIn(code)
+                console.log('Is logged in tx: ', isLoggedInTx)                
+                contractWithSigner.on('logInStatus', async(isLoggedIn) => {
+                    if (isLoggedIn === true) {
+                        let apiSpec = await contractWithSigner.getApiSpec(id)
+                        console.log('API Spec', apiSpec)                        
+                    }
+                })                
             }       
         }   
-    })     
+    }) 
 }
 
 invoke()

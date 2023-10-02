@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+pragma solidity ^0.8.10;
 
 contract Apilink {
     
@@ -13,24 +13,23 @@ contract Apilink {
     uint256 private index;
     uint256 private nodeCount;
     
-    struct apicalldetails {        
+    struct Apicalldetails {        
         string endpoint;
         string method;
         string body;  
         string headers;
     }
 
-    struct nodeDetails {        
+    struct NodeDetails {        
         string nodeName;
         string password;
     }
-    //apicalldetails[] private jobs;
-    apicalldetails api = apicalldetails("", "GET", "", "");
-    mapping (address => mapping(uint256 => apicalldetails)) private apicalls;    
 
-    mapping(address => nodeDetails) private nodes;
+    mapping(uint256 => Apicalldetails) private apicalls;   
+    mapping(address => NodeDetails) private nodes;
     mapping(address => uint256) private nodeIndexes;
     address[] private nodeList;    
+    mapping(uint256 => uint256) private nodeMapper;
 
     constructor() {                
         toInvoke = false; 
@@ -40,14 +39,11 @@ contract Apilink {
         nodeCount = 0;           
     }    
 
-    event invoked(
-        bool invoke,
-        uint256 id
-    );
-
+    event invoked(bool invoke, uint256 id);
     event logInSuccess(bool passwordset);
-
-    //event logInStatus(bool loginStatus);
+    event logInStatus(bool loginStatus);
+    //event log(Apicalldetails api);
+    //event logNode(string text, NodeDetails node);
 
     function createApiCall(uint256 _callid, string calldata _endpoint, string calldata _method, string calldata _body, string calldata _headers) external payable {
         require(_callid > 0, "Call id cannot be null");
@@ -60,24 +56,25 @@ contract Apilink {
         
         user = msg.sender;        
         toInvoke = true;
-        callid = _callid;
-        setChosenNode();
+        callid = _callid;        
+        nodeMapper[callid] = setChosenNode();
+        
         emit invoked(toInvoke, _callid);
 
         toInvoke = false; //Reset        
-        apicalls[msg.sender][_callid] = apicalldetails(_endpoint, _method, _body, _headers);
-        
+        apicalls[_callid] = Apicalldetails(_endpoint, _method, _body, _headers);
     }
 
-    function getApiSpec(address _user, uint256 _id) external view returns (apicalldetails memory){
-        return apicalls[_user][_id];
+    function getApiSpec(uint256 _id) external view returns (Apicalldetails memory){        
+        return apicalls[_id];
     }
 
     function login(string calldata _passcode, string calldata _nodeName) external {
         require(bytes(_passcode).length > 0, "Passcode cannot be empty");
         require(bytes(_nodeName).length > 0, "Nodename cannot be empty");
 
-        nodes[msg.sender] = nodeDetails(_nodeName, string(abi.encodePacked(msg.sender, _passcode)));   
+        nodes[msg.sender].nodeName = _nodeName;
+        nodes[msg.sender].password = string(abi.encodePacked(msg.sender, _passcode));   
         nodeList.push(msg.sender);                        
         isPasscodeSet = true;
 
@@ -85,29 +82,30 @@ contract Apilink {
         
         nodeCount += 1;  
         nodeIndexes[msg.sender] = nodeCount;              
-        isPasscodeSet = false;        
+        isPasscodeSet = false;              
     }
 
     function getNodeId(address _node) external view returns (uint256) {        
         return nodeIndexes[_node];
     }
 
-    function isLoggedIn(string calldata _code) external returns (bool){
+    function isLoggedIn(string calldata _code) external {
         require(
             keccak256(bytes(nodes[msg.sender].password)) == keccak256(bytes(string(abi.encodePacked(msg.sender, _code)))),
             "No pancakes for you"
         );
         loggedIn = true;
-        //emit logInStatus(loggedIn);
-        return loggedIn;
+        //emit logNode('success', nodes[msg.sender]);
+        emit logInStatus(loggedIn);                
     }
 
-    function setChosenNode() internal {
+    function setChosenNode() internal returns (uint256) {
         require(nodeList.length > 0, "No items available");
-        index = ((index + 1) % nodeList.length) + 1;        
+        index = ((index + 1) % nodeList.length) + 1;  
+        return index;      
     }
 
-    function getChosenNode() external view returns (uint256) {
-        return index;
+    function getChosenNode(uint256 _callid) external view returns (uint256) {
+        return nodeMapper[_callid];
     }
 }

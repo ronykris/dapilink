@@ -1,9 +1,9 @@
 import {ethers} from 'ethers'
-
-const { abi } = require('./Apilink.json')
+const { abi } = require('../../artifacts/contracts/Apilink.sol/Apilink.json')
+//const { abi } = require('./Apilink.json')
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
-let contractAddr = '0xF4216590273fbfcb19a016d24AD8f20038e742fA'
+let contractAddr = process.env.CONTRACT
 let contract = new ethers.Contract(contractAddr, abi, provider)
 
 const getData = async (txHash: string) => {

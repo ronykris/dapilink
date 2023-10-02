@@ -3,10 +3,11 @@ import * as sapphire from '@oasisprotocol/sapphire-paratime'
 import {spawnSync} from "child_process"
 import  dotenv from 'dotenv'
 dotenv.config()
-const { abi } = require('./Apilink.json')
+
+const { abi } = require('../../artifacts/contracts/Apilink.sol/Apilink.json')
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
-let contractAddr = '0xF4216590273fbfcb19a016d24AD8f20038e742fA'
+let contractAddr = process.env.CONTRACT
 
 var nodeKey = process.env.NODE_KEY || ''
 var code = process.env.CODE || ''
@@ -19,10 +20,10 @@ const setEnv = async (envVar: string, value: string) => {
     let updateEnvCmd = `echo ${envVar}=${value} >> .env`
     var env = spawnSync('bash', ['-c', updateEnvCmd])
     if (env.error) {
-        throw new Error('Error updating bashrc: ' + env.error.message)
+        throw new Error('Error updating .env: ' + env.error.message)
     }
     if (env.status != 0) {
-        throw new Error('Failed to update bashrc ' + env.status)
+        throw new Error('Failed to update .env ' + env.status)
     }        
     dotenv.config()
 }
@@ -49,7 +50,7 @@ const login = async (code: string, nodeName: string) => {
     } else {
         const tx = await contractWithSigner.login(code, nodeName)
         console.log(tx)  
-
+        
         const isTxnMined = async (txnHash: string) => {
             const txnreceipt: any = await provider.getTransactionReceipt(txnHash)
             if (txnreceipt) {
@@ -58,7 +59,11 @@ const login = async (code: string, nodeName: string) => {
                     console.log('Txn: ', txnreceipt)
                     node = await contractWithSigner.getNodeId(wallet.address)
                     console.log('Node ID: ', node._hex)
-                    process.env.NODEID = node
+                    if (!process.env.NODEID) {
+                        await setEnv('NODEID', node._hex)     
+                        console.log('NodeID set...')
+                        console.log(process.env.NODEID)
+                    }                      
                     console.log('NodeID set...')
                 }
             }
@@ -67,7 +72,7 @@ const login = async (code: string, nodeName: string) => {
                 setTimeout(() => { isTxnMined(txnHash), 500})
             }
         }
-        isTxnMined(tx.hash)
+        isTxnMined(tx.hash)        
     }
 }
 
