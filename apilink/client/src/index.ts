@@ -1,8 +1,11 @@
 import { ethers }from 'ethers'
 import * as sapphire from '@oasisprotocol/sapphire-paratime'
 import dotenv from 'dotenv'
+import { spawnSync } from "child_process";
 
-const { abi } = require('../../artifacts/contracts/Apilink.sol/Apilink.json')
+
+//const { abi } = require('../../artifacts/contracts/Apilink.sol/Apilink.json')
+const { abi } = require('./Apilink.json')
 dotenv.config()
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
@@ -12,6 +15,25 @@ let contractAddr = process.env.CONTRACT
 var pvtKey = process.env.CLIENT_KEY || ''
 var overrides = {
   value: ethers.utils.parseEther('0.01')
+}
+
+const retrieveFromIpfs = async (cid: string): Promise<object | null> => {
+  const cmd = `ipfs cat /ipfs/${cid}`
+  const execute = spawnSync(cmd, {encoding: 'utf8'})
+  if (execute.error) {
+    throw new Error("execution error: " + execute.error.message)
+  }
+  if (execute.stderr) {
+    throw new Error("execution error: " + execute.stderr.toString())
+  }
+  try {
+    const jsonData = JSON.parse(execute.stdout.trim())
+    console.log(jsonData)
+    return jsonData
+  } catch (e) {
+    console.error(e)
+    return null
+  }  
 }
 
 const invokeApi = async (callId: number, endpoint: string, method: string, body: string, headers:string) => {    
@@ -28,6 +50,17 @@ const invokeApi = async (callId: number, endpoint: string, method: string, body:
         if (txnreceipt.blockNumber) {
           console.log('Txn Block: ', txnreceipt.blockNumber)
           console.log('Txn: ', txnreceipt)
+
+          contractWithSigner.on('resultsRcvd', async(rcvd: boolean) => {
+            if (rcvd) {
+              contractWithSigner.provider.once('block', async () => {
+                const cid: string = await contractWithSigner.getResults(callId)
+                const results = await retrieveFromIpfs(cid)
+                console.log(results)                
+              })
+              
+            }
+          })
         }
       }
       else {

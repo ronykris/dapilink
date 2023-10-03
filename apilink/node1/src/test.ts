@@ -1,6 +1,5 @@
-//const fetch = require('node-fetch'); // If you're using this in a Node.js environment
-
-const apiUrl = 'https://serpapi.com/search';
+const serpApi = async () => {
+  const apiUrl = 'https://serpapi.com/search';
 const apiKey = process.env.API_KEY || '';
 
 const queryParams = new URLSearchParams({
@@ -21,3 +20,4 @@ fetch(url)
     // Handle any errors here
     console.error('Error:', error);
   });
+}

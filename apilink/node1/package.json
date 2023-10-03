@@ -4,23 +4,25 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc -p . && ts-node --esm src/test.ts",
     "build": "tsc -p .",
     "login": "tsc -p . && ts-node src/login.ts",
     "start": "tsc -p . && ts-node src/index.ts",
     "decode": "tsc -p . && ts-node src/decode.ts",
-    "listen": "tsc -p . && ts-node src/eventListener.ts"
+    "listen": "tsc -p . && ts-node src/eventListener.ts",
+    "upload": "tsc -p . && ts-node src/upload.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "child_process": "^1.0.2",
+  "dependencies": {    
+    "axios": "^1.5.1",    
+    "child_process": "^1.0.2",    
     "dotenv": "^16.3.1",
-    "ethers": "^5.4",
+    "ethers": "^5.4",    
+    "path": "^0.12.7",
     "serpapi": "^2.0.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
-    "web3": "^4.1.1"
+    "typescript": "^5.2.2"    
   }
 }

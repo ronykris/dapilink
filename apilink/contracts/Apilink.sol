@@ -6,6 +6,7 @@ contract Apilink {
     address private user;
     bool private toInvoke;
     uint256 private callid;
+    string private cid;
     
     bool private isPasscodeSet;
     bool private loggedIn;
@@ -30,6 +31,7 @@ contract Apilink {
     mapping(address => uint256) private nodeIndexes;
     address[] private nodeList;    
     mapping(uint256 => uint256) private nodeMapper;
+    mapping(uint256 => string) private results;
 
     constructor() {                
         toInvoke = false; 
@@ -42,6 +44,7 @@ contract Apilink {
     event invoked(bool invoke, uint256 id);
     event logInSuccess(bool passwordset);
     event logInStatus(bool loginStatus);
+    event resultsRcvd(bool);
     //event log(Apicalldetails api);
     //event logNode(string text, NodeDetails node);
 
@@ -107,5 +110,18 @@ contract Apilink {
 
     function getChosenNode(uint256 _callid) external view returns (uint256) {
         return nodeMapper[_callid];
+    }
+
+    function setResult(uint256 _callid, string calldata _cid) external {
+        require(_callid > 0, "Call id cannot be null");
+        require(bytes(_cid).length > 0, "CID cannot be null");
+
+        results[_callid] = _cid;
+        emit resultsRcvd(true);
+    }
+
+    function getResults(uint256 _callid) external view returns (string memory) {
+        require(_callid > 0, "Call id cannot be null");
+        return results[_callid];
     }
 }

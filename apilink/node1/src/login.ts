@@ -4,7 +4,8 @@ import {spawnSync} from "child_process"
 import  dotenv from 'dotenv'
 dotenv.config()
 
-const { abi } = require('../../artifacts/contracts/Apilink.sol/Apilink.json')
+//const { abi } = require('../../artifacts/contracts/Apilink.sol/Apilink.json')
+const { abi } = require('./Apilink.json')
 
 let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
 let contractAddr = process.env.CONTRACT
