@@ -46,7 +46,7 @@ const DataRenderer = () => {
       <div className="flex flex-wrap">
         {videos.map((video, index) => (
           <div key={index} className="w-1/4 p-4">
-            <div className="border rounded-lg overflow-hidden" style={{ minWidth: '200px', minHeight: '150px', padding: '16px' }}>
+            <div className="border rounded-lg overflow-hidden" style={{ minWidth: '200px', minHeight: '225px', padding: '16px' }}>
               <a href={video.link} target="_blank" rel="noopener noreferrer">
                 <img src={video.thumbnail} alt={`Video ${index}`} className="w-full h-32 object-cover" />
                 <p className="mt-2 font-bold">{video.title}</p>
@@ -72,7 +72,7 @@ const DataRenderer = () => {
       </ul>
 
       <h1 className="text-2xl font-bold mt-12 mb-4 ml-8">Related Questions</h1>
-      <ul className='ml-8 mb-4'>
+      <ul className='ml-8'>
         {relatedQuestions.map((question, index) => (
           <li key={index} className="mb-4 max-w-6xl">
             <a href={question.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
