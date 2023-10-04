@@ -8,7 +8,7 @@
     "build": "tsc -p . && ts-node src/ipfs.ts",
     "start": "tsc -p . && ts-node src/index.ts",
     "testClient": "tsc -p . && ts-node src/testLinkClient.ts",
-    "helia": "tsc -p . && ts-node src/ipfs.ts"
+    "ipfs": "tsc -p . && ts-node src/ipfs.ts"
   },
   "author": "",
   "license": "ISC",
