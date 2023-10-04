@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import router from 'next/router'
 
 const DataRenderer = () => {
   const [images, setImages] = useState([]);
@@ -10,8 +11,9 @@ const DataRenderer = () => {
 
   useEffect(() => {
     // Fetch data from the specified endpoint
+    
     axios
-      .get('http://35.200.178.102:8080/ipfs/Qmbspr5KdwTjxiD4jQKp3Uv3wNhERjxoao2barxEyGxkGp')
+      .get(`/api/search?q=${router.query}`)
       .then((response) => {
         // Extract inline_images, inline_videos, and organic_results from the response
         console.log(response.data)

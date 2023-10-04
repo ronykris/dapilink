@@ -1,11 +1,15 @@
 "use client"
 
 import React, { useState } from 'react';
+import { ethers } from 'ethers';
+import * as sapphire from '@oasisprotocol/sapphire-paratime';
+import { Router, useRouter } from 'next/router';
 
 export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   const [showConnectButton, setShowConnectButton] = useState(true);
   const [walletAddress, setWalletAddress] = useState(null);
+  const [searchText, setSearchText] = useState('');
 
   const shinyTextStyles = {
     fontSize: '7rem',
@@ -20,7 +24,7 @@ export default function Home() {
 
   const handleConnectWalletClick = async () => {
     try {
-      if (window.ethereum) {
+      if (window.ethereum) {        
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const selectedAddress = accounts[0];
 
@@ -40,11 +44,22 @@ export default function Home() {
     }
   };
 
+  
+
   const handleLogoutClick = () => {
     setShowSearch(false);
     setShowConnectButton(true); 
     setWalletAddress(null);
     console.log("logged out")
+  };
+
+  const handleSearchClick  = async() => {
+    console.log(`Search Text: ${searchText}`);   
+    const router = useRouter()
+    router.push({
+      url: '/result',
+      query: searchText
+    },'/result')    
   };
 
   return (
@@ -64,12 +79,16 @@ export default function Home() {
       )}
       {showSearch && (
         <div style={searchBarStyles} className="mt-4 flex items-center">
+          
           <input
             type="text"
             placeholder="Search..."
             className="border-2 border-black-400 rounded py-2 px-4 outline-none w-full"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
           />
           <button
+            onClick={handleSearchClick}
             className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded"
           >
             Search
