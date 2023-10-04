@@ -1,0 +1,1057 @@
+{
+    "search_metadata": {
+      "id": "651d7a3ef0adfbe52903b779",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/689be959ecdcaf4f/651d7a3ef0adfbe52903b779.json",
+      "created_at": "2023-10-04 14:44:14 UTC",
+      "processed_at": "2023-10-04 14:44:14 UTC",
+      "google_url": "https://www.google.com/search?q=Toffee&oq=Toffee&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/689be959ecdcaf4f/651d7a3ef0adfbe52903b779.html",
+      "total_time_taken": 3.83
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "Toffee",
+      "google_domain": "google.com",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "Toffee",
+      "total_results": 84400000,
+      "time_taken_displayed": 0.55,
+      "menu_items": [
+        {
+          "position": 1,
+          "title": "All"
+        },
+        {
+          "position": 2,
+          "title": "Images",
+          "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoAXoECAIQAw",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=Toffee"
+        },
+        {
+          "position": 3,
+          "title": "Shopping",
+          "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=shop&source=lnms&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoAnoECAIQBA",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=Toffee"
+        },
+        {
+          "position": 4,
+          "title": "Videos",
+          "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=vid&source=lnms&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoA3oECAIQBQ",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_videos&gl=us&google_domain=google.com&hl=en&q=Toffee"
+        },
+        {
+          "position": 5,
+          "title": "News",
+          "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=nws&source=lnms&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoBHoECAIQBg",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee&tbm=nws"
+        },
+        {
+          "position": 6,
+          "title": "Maps",
+          "link": "https://maps.google.com/maps?q=Toffee&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoAHoECAIQCg"
+        },
+        {
+          "position": 7,
+          "title": "Books",
+          "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=bks&source=lnms&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoAXoECAIQCw"
+        },
+        {
+          "position": 8,
+          "title": "Flights",
+          "link": "https://www.google.com/travel/flights?q=Toffee&sca_esv=570671288&tbm=flm&source=lnms&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoAnoECAIQDA"
+        },
+        {
+          "position": 9,
+          "title": "Finance",
+          "link": "https://www.google.com/finance?sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_AUoA3oECAIQDQ"
+        }
+      ],
+      "organic_results_state": "Results for exact spelling"
+    },
+    "ads": [
+      {
+        "position": 1,
+        "block_position": "bottom",
+        "title": "Enstrom Candies - Enstrom's Toffee Delights",
+        "link": "https://enstrom.com/shop/toffee/",
+        "displayed_link": "https://www.enstrom.com",
+        "tracking_link": "https://www.google.com/aclk?sa=l&ai=DChcSEwieu6PV0NyBAxXEn1oFHQTECE4YABAAGgJ2dQ&gclid=EAIaIQobChMInruj1dDcgQMVxJ9aBR0ExAhOEAMYASAAEgI1XvD_BwE&sig=AOD64_3BtTtebas22ZBows2PYtw9O5ijKQ&q&adurl",
+        "extensions": [
+          "‎Almond Toffee · ‎Enhance Your Gift Giving · ‎Handcrafted in Colorado · ‎Our Story"
+        ],
+        "description": "Turning Enstrom Moments into Traditions Since 1960. World Famous Toffee & Confections. Handcrafted Confections Made in Colorado Using High-Quality, All Natural Ingredients.",
+        "source": "Enstrom Candies",
+        "sitelinks": [
+          {
+            "title": "Almond Toffee",
+            "link": "https://enstrom.com/shop/toffee/"
+          },
+          {
+            "title": "Enhance Your Gift Giving",
+            "link": "https://www.enstrom.com/pages/discount-programs/"
+          },
+          {
+            "title": "Handcrafted in Colorado",
+            "link": "https://www.enstrom.com/pages/artisans-at-work/"
+          },
+          {
+            "title": "Our Story",
+            "link": "http://www.enstrom.com/Pages/Our+Story/"
+          }
+        ]
+      }
+    ],
+    "recipes_results": [
+      {
+        "title": "Best Toffee Ever - Super Easy",
+        "link": "https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/",
+        "source": "Allrecipes",
+        "rating": 4.7,
+        "reviews": 1400,
+        "total_time": "1 hr 40 min",
+        "ingredients": [
+          "Chocolate chips",
+          "white sugar"
+        ],
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a6fff97dd5cda8e150838a410aff1eb3ed18b479d460c61db70b3bfc740b0c59.jpeg"
+      },
+      {
+        "title": "Toffee Recipe",
+        "link": "https://sugarspunrun.com/toffee-recipe/",
+        "source": "Sugar Spun Run",
+        "rating": 4.9,
+        "reviews": 48,
+        "total_time": "1 hr 25 min",
+        "ingredients": [
+          "Milk chocolate chips",
+          "sea salt",
+          "vanilla extract"
+        ],
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a6fff97dd5cda8e150838a410aff1eb389787599d3d68948a60bd953b52b9bd5.jpeg"
+      },
+      {
+        "title": "Better Than Anything Toffee Recipe",
+        "link": "https://www.momontimeout.com/better-than-anything-toffee-recipe/",
+        "source": "Mom On Timeout",
+        "rating": 5,
+        "reviews": 102,
+        "total_time": "25 min",
+        "ingredients": [
+          "Milk chocolate chips",
+          "vanilla extract"
+        ],
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a6fff97dd5cda8e150838a410aff1eb347dee514b77b9035097a3ab60636724f.jpeg"
+      }
+    ],
+    "knowledge_graph": {
+      "title": "Toffee",
+      "type": "Food",
+      "kgmid": "/m/02xfyv",
+      "knowledge_graph_search_link": "https://www.google.com/search?kgmid=/m/02xfyv&hl=en-US&q=Toffee&kgs=37350d4181cdf2ed&shndl=0&source=sh/x/kp/m1/1",
+      "serpapi_knowledge_graph_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&kgmid=%2Fm%2F02xfyv&q=Toffee",
+      "header_images": [
+        {
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fb0d0d1e9c6a73831c29763355b44c7292d2f377438e87d18.jpeg",
+          "source": "https://en.wikipedia.org/wiki/Toffee"
+        },
+        {
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fb0d0d1e9c6a73831de8ccf814500e2d17eeb33b67ef64c10.jpeg",
+          "source": "https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/"
+        },
+        {
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fb0d0d1e9c6a73831265bc1298697e2897ad3a56e1a17bcf5.jpeg",
+          "source": "https://handletheheat.com/homemade-toffee-bits/"
+        },
+        {
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fb0d0d1e9c6a7383171cc20eecaf6dcd32e46987221dd50d2.jpeg",
+          "source": "https://www.momontimeout.com/better-than-anything-toffee-recipe/"
+        },
+        {
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fb0d0d1e9c6a738311a28dc14df90f69fd63e4bd73aba1572.jpeg",
+          "source": "https://dinnerthendessert.com/easy-toffee-bits/"
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6GvJH2XrNV6lO0KlV-ieUtvosB23sWopatiofY1C2A&s",
+          "source": "https://frostingandglue.com/toffee-recipe/"
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgt84zcrV8W3f71FrGto_RKjvYy87g25cxl0S6tPNww&s",
+          "source": "https://sugarspunrun.com/toffee-recipe/"
+        }
+      ],
+      "description": "Toffee is a confection made by caramelizing sugar or molasses along with butter, and occasionally flour. The mixture is heated until its temperature reaches the hard crack stage of 149 to 154 °C. While being prepared, toffee is sometimes mixed with nuts or raisins.",
+      "source": {
+        "name": "Wikipedia",
+        "link": "https://en.wikipedia.org/wiki/Toffee"
+      },
+      "buttons": [
+        {
+          "text": "Ingredients",
+          "subtitle": "What Is Toffee Made Of",
+          "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfgFSc3FUjX7LJXHeqAJYdmw5wxsDd7P9cEvXG4R0J60U&s"
+        },
+        {
+          "text": "Taste",
+          "subtitle": "Toffee Taste"
+        }
+      ],
+      "toffee_chocolate_bar": [
+        {
+          "name": "Chocolove Almonds Sea Salt Dark Chocolate",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Chocolove+Almonds+Sea+Salt+Dark+Chocolate&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0zKosL6soSM_QYljEqumckZ-cn5NflqrgmJObn5dSrBCcmqgQnJhTouCSWJStAJFPLEndwcoIABWXtbVEAAAA&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAguEAU",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Chocolove+Almonds+Sea+Salt+Dark+Chocolate&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0zKosL6soSM_QYljEqumckZ-cn5NflqrgmJObn5dSrBCcmqgQnJhTouCSWJStAJFPLEndwcoIABWXtbVEAAAA",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3f51bd8d94eedb28dc21cedfa59090d7db28ae1575898e9848868e29b3759b210c.jpeg"
+        },
+        {
+          "name": "Skor Candy Bar 1.4 oz",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Skor+Candy+Bar+1.4+oz&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0LEkpyjG0yLXUYljEKhqcnV-k4JyYl1Kp4JRYpGCoZ6KQX7WDlREANXJYzzAAAAA&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAguEAc",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Skor+Candy+Bar+1.4+oz&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0LEkpyjG0yLXUYljEKhqcnV-k4JyYl1Kp4JRYpGCoZ6KQX7WDlREANXJYzzAAAAA",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3f51bd8d94eedb28dc21cedfa59090d7db81b5572fea1b969ede5859fe7c98bb04.jpeg"
+        },
+        {
+          "name": "Enstrom Chocolate Almond Toffee",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Enstrom+Chocolate+Almond+Toffee&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TC_IyDM1yCrSYljEKu-aV1xSlJ-r4JyRn5yfk1iSquCYk5ufl6IQkp-Wlpq6g5URABCyDlA6AAAA&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAguEAk",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Enstrom+Chocolate+Almond+Toffee&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0TC_IyDM1yCrSYljEKu-aV1xSlJ-r4JyRn5yfk1iSquCYk5ufl6IQkp-Wlpq6g5URABCyDlA6AAAA",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3f51bd8d94eedb28dc21cedfa59090d7dbce81cc431d6cb24df14a8550026abe38.jpeg"
+        },
+        {
+          "name": "Heath Miniatures Chocolatey English Toffee Candy",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Heath+Miniatures+Chocolatey+English+Toffee+Candy&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0zCrOKjPNKazSYljEauCRmliSoeCbmZeZWFJalFqs4JyRn5yfk1iSWqngmpeek1mcoRCSn5aWmqrgnJiXUrmDlREA7pFqdksAAAA&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAguEAs",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Heath+Miniatures+Chocolatey+English+Toffee+Candy&stick=H4sIAAAAAAAAAONgFmJQ4tVP1zc0zCrOKjPNKazSYljEauCRmliSoeCbmZeZWFJalFqs4JyRn5yfk1iSWqngmpeek1mcoRCSn5aWmqrgnJiXUrmDlREA7pFqdksAAAA",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3f51bd8d94eedb28dc21cedfa59090d7dbc6f957e4c11f1972372f551f6bfd9fe1.jpeg"
+        }
+      ],
+      "toffee_chocolate_bar_link": "https://www.google.com/search?sca_esv=570671288&q=toffee+chocolate+bar&stick=H4sIAAAAAAAAAONgFuLUz9U3MKpIqyxTQjC1RLKTrfST83Nz8_OsUvLL88oTi1KKVzFyOifmpVQ6JRYVL2IVKclPS0tNVUjOyE_Oz0ksSVVISizawcoIADluOilUAAAA&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQMSgAegQILhAB",
+      "toffee_chocolate_bar_stick": "H4sIAAAAAAAAAONgFuLUz9U3MKpIqyxTQjC1RLKTrfST83Nz8_OsUvLL88oTi1KKVzFyOifmpVQ6JRYVL2IVKclPS0tNVUjOyE_Oz0ksSVVISizawcoIADluOilUAAAA",
+      "people_also_search_for": [
+        {
+          "name": "Caramel",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Caramel&si=ALGXSlZS0YT-iRe81F2cKC9lM9KWTK4y0m5Atx8g9YliNNw2mXx-WLWxCF1RXZpO5suatmc7YciPq39l33W_DgyhwD-tsTpkCIe2brHKjqo9jYnu5ujLEO5udh5gFii101Q5cZ__DNxYm1L0sq16r07aFiizzBeeadzlM0zo0wnU4zKAI2KvKBSXPAnj-pXiC_bkA1KcctCrMrPaJ78cmLS5A1B8M7-SYRvbuNyTEZZ4w7YHPNngu-F1NwJxLAOSPhCcTsk72awf_yvIYBJmGOBecVbCQI93VG-XZuNqiHfJjXtGaFLEhIE%3D&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAgsEAU",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Caramel&si=ALGXSlZS0YT-iRe81F2cKC9lM9KWTK4y0m5Atx8g9YliNNw2mXx-WLWxCF1RXZpO5suatmc7YciPq39l33W_DgyhwD-tsTpkCIe2brHKjqo9jYnu5ujLEO5udh5gFii101Q5cZ__DNxYm1L0sq16r07aFiizzBeeadzlM0zo0wnU4zKAI2KvKBSXPAnj-pXiC_bkA1KcctCrMrPaJ78cmLS5A1B8M7-SYRvbuNyTEZZ4w7YHPNngu-F1NwJxLAOSPhCcTsk72awf_yvIYBJmGOBecVbCQI93VG-XZuNqiHfJjXtGaFLEhIE%3D",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fbece4ba065605ae47c4e391ae7b3e0bf554f7944ee97b371255025c5e395ae75.jpeg"
+        },
+        {
+          "name": "Taffy",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Taffy&si=ALGXSlYh1-GEPndq7qMo--O-TPixQtNN4JMroSxgItz5kq0stI0Fhmhx3_2EcFa5TqEv5xVT45h336kjHCRLhSghfv8U_igSDcu76ihPot47QDSXMFHMi6a-w8mDFcZdDX-nJQeze-pXAKIDqBus9zb1MzR8af2kCv7VC01IjQkmgNnNpCrGypwq9eXSvQLWMIiPt3UVNxte2qz97dssVGtk7l_6TA9ApExnXf6WxNjhimJRKKHQhjWKm9xyZpVboB9F40m9JMDnjQlLV6RhfWPIqllExvRC4YRb5GNNe3LTg33yBiD6hfc%3D&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAgsEAc",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Taffy&si=ALGXSlYh1-GEPndq7qMo--O-TPixQtNN4JMroSxgItz5kq0stI0Fhmhx3_2EcFa5TqEv5xVT45h336kjHCRLhSghfv8U_igSDcu76ihPot47QDSXMFHMi6a-w8mDFcZdDX-nJQeze-pXAKIDqBus9zb1MzR8af2kCv7VC01IjQkmgNnNpCrGypwq9eXSvQLWMIiPt3UVNxte2qz97dssVGtk7l_6TA9ApExnXf6WxNjhimJRKKHQhjWKm9xyZpVboB9F40m9JMDnjQlLV6RhfWPIqllExvRC4YRb5GNNe3LTg33yBiD6hfc%3D",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fbece4ba065605ae47c4e391ae7b3e0bf2ba2c908c6b46d0a22a60fc1ef06dedc.jpeg"
+        },
+        {
+          "name": "Tofu",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Tofu&si=ALGXSlZS0YT-iRe81F2cKC9lM9KWTK4y0m5Atx8g9YliNNw2mSlqjgdqRlyPjtYGZXEmqv-Bh8HtayZKb-kemELkfRVbL3Tx6uIWL3LBCvBnUwksqVxhKDbK2yowBaiQ6pdjWtvS89ged6H6BObMu2qx_omhpt4KJ1AFqyBhYCRiOIVmwB_n0jUiuFY6S_0rWldMdmIHEIE5OGX5-hEW8ShM_SG7qGY6YRPV_wFVHMnfz1i7egZW6CY2CZWPzG0DAyqAQbLZA0ry7gS74MPzOM1GD5n-d9IIxA%3D%3D&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAgsEAk",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Tofu&si=ALGXSlZS0YT-iRe81F2cKC9lM9KWTK4y0m5Atx8g9YliNNw2mSlqjgdqRlyPjtYGZXEmqv-Bh8HtayZKb-kemELkfRVbL3Tx6uIWL3LBCvBnUwksqVxhKDbK2yowBaiQ6pdjWtvS89ged6H6BObMu2qx_omhpt4KJ1AFqyBhYCRiOIVmwB_n0jUiuFY6S_0rWldMdmIHEIE5OGX5-hEW8ShM_SG7qGY6YRPV_wFVHMnfz1i7egZW6CY2CZWPzG0DAyqAQbLZA0ry7gS74MPzOM1GD5n-d9IIxA%3D%3D",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fbece4ba065605ae47c4e391ae7b3e0bf746f151065897f10dfbcddb4b0fa0c28.jpeg"
+        },
+        {
+          "name": "Candy",
+          "link": "https://www.google.com/search?sca_esv=570671288&q=Candy&si=ALGXSlZS0YT-iRe81F2cKC9lM9KWTK4y0m5Atx8g9YliNNw2maljjg0WNPCIXq-lRvEGVM-PI0CuwWiQUWH7fviBmU37j9LT1SF9fMZzhMYMzSbPyNyqU6sicRJ4jOchYyS1vWui1wIXqTHEAG-MAuZlsoMn8tBWeVbzRuxGpCwkM-2mP2A3nmDwkFtgzodrt6gcVQyqCuWMWWT6r6-hSDCIdhqdGMPFiamZ_Sd9cj5gA0itIPY51K3i6dG6U22m_iy_6O-R1aLLyW_N-esiFhOBwtik7crgvw%3D%3D&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQxA16BAgsEAs",
+          "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Candy&si=ALGXSlZS0YT-iRe81F2cKC9lM9KWTK4y0m5Atx8g9YliNNw2maljjg0WNPCIXq-lRvEGVM-PI0CuwWiQUWH7fviBmU37j9LT1SF9fMZzhMYMzSbPyNyqU6sicRJ4jOchYyS1vWui1wIXqTHEAG-MAuZlsoMn8tBWeVbzRuxGpCwkM-2mP2A3nmDwkFtgzodrt6gcVQyqCuWMWWT6r6-hSDCIdhqdGMPFiamZ_Sd9cj5gA0itIPY51K3i6dG6U22m_iy_6O-R1aLLyW_N-esiFhOBwtik7crgvw%3D%3D",
+          "image": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/a8bc655feadfbc12f6992cb403034a3fbece4ba065605ae47c4e391ae7b3e0bfd5ab586f091e3cd77c869e243995ff22.jpeg"
+        }
+      ],
+      "people_also_search_for_link": "https://www.google.com/search?sca_esv=570671288&q=Toffee&stick=H4sIAAAAAAAAAONgFuLUz9U3MKpIqyxTQjC1BIMzU1LLEyuL_VIrSoJLUguKF7GyheSnpaWm7mBlBACenysjNwAAAA&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQMSgAegQILBAB",
+      "people_also_search_for_stick": "H4sIAAAAAAAAAONgFuLUz9U3MKpIqyxTQjC1BIMzU1LLEyuL_VIrSoJLUguKF7GyheSnpaWm7mBlBACenysjNwAAAA",
+      "list": {
+        "total_fat": [
+          "3.9 g",
+          "6%"
+        ],
+        "saturated_fat": [
+          "2.5 g",
+          "12%"
+        ],
+        "trans_fat_regulation": [
+          "0.1 g"
+        ],
+        "cholesterol": [
+          "12 mg",
+          "4%"
+        ],
+        "sodium": [
+          "16 mg",
+          "0%"
+        ],
+        "potassium": [
+          "6 mg",
+          "0%"
+        ],
+        "total_carbohydrate": [
+          "8 g",
+          "2%"
+        ],
+        "dietary_fiber": [
+          "0 g",
+          "0%"
+        ],
+        "sugar": [
+          "8 g"
+        ],
+        "protein": [
+          "0.1 g",
+          "0%"
+        ],
+        "vitamin_c": [
+          "0%"
+        ],
+        "calcium": [
+          "0%"
+        ],
+        "iron": [
+          "0%"
+        ],
+        "vitamin_b6": [
+          "0%"
+        ],
+        "cobalamin": [
+          "0%"
+        ],
+        "magnesium": [
+          "0%"
+        ]
+      }
+    },
+    "inline_images": [
+      {
+        "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=iu&ictx=1&vet=1&fir=9n83T4ORVm0VzM%252CJS4aQUAVWKMm2M%252C%252Fm%252F02xfyv%253BNXpDbbjz8Ek_rM%252Clqfm2OrepIU_JM%252C_%253BkgbmZN9Ljp0ktM%252CArLMQpetDkVWGM%252C_%253BSOUkeMGypK8IgM%252C7Y3wBDax7rXEjM%252C_%253BVGw2sZ3wNYrLpM%252CaNmQwUVKjE8wHM%252C_%253BfZL7PIbVamJrGM%252CDaJ5uzl9t8P7pM%252C_%253Bm7L9JZjqxiw5UM%252C4UFsASNZOZeWjM%252C_&usg=AI4_-kTU5knlV_eKeFm-w62u5OwmJ_UXBQ&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_B16BAgxEAE#imgrc=9n83T4ORVm0VzM",
+        "source": "https://en.wikipedia.org/wiki/Toffee",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/4bb6be043e9254ee648965c56073b66a38035314458f5719de546b87b180cbf3.jpeg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Thorntonstoffee.jpg",
+        "title": "upload.wikimedia.org/wikipedia/commons/f/f3/Thornt...",
+        "source_name": "en.wikipedia.org"
+      },
+      {
+        "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=iu&ictx=1&vet=1&fir=9n83T4ORVm0VzM%252CJS4aQUAVWKMm2M%252C_%253BNXpDbbjz8Ek_rM%252Clqfm2OrepIU_JM%252C_%253BkgbmZN9Ljp0ktM%252CArLMQpetDkVWGM%252C_%253BSOUkeMGypK8IgM%252C7Y3wBDax7rXEjM%252C_%253BVGw2sZ3wNYrLpM%252CaNmQwUVKjE8wHM%252C_%253BfZL7PIbVamJrGM%252CDaJ5uzl9t8P7pM%252C_%253Bm7L9JZjqxiw5UM%252C4UFsASNZOZeWjM%252C_&usg=AI4_-kRoL07NezKWbSv2e-iNLOvcBVm5ew&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_h16BAgyEAE#imgrc=NXpDbbjz8Ek_rM",
+        "source": "https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/4bb6be043e9254ee78cc5f517ce80cbad022d1088948c857a591292fcf882f6b.jpeg",
+        "original": "https://www.allrecipes.com/thmb/CYepGDVzW15Q-rBIZkmxr_IonLk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/73412-best-toffee-ever-super-easy-mfs445-1-f0be2d4a336f42468eccd45bdecf5f94.jpg",
+        "title": "Best Toffee Ever - Super Easy",
+        "source_name": "Allrecipes"
+      },
+      {
+        "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=iu&ictx=1&vet=1&fir=9n83T4ORVm0VzM%252CJS4aQUAVWKMm2M%252C_%253BNXpDbbjz8Ek_rM%252Clqfm2OrepIU_JM%252C_%253BkgbmZN9Ljp0ktM%252CArLMQpetDkVWGM%252C_%253BSOUkeMGypK8IgM%252C7Y3wBDax7rXEjM%252C_%253BVGw2sZ3wNYrLpM%252CaNmQwUVKjE8wHM%252C_%253BfZL7PIbVamJrGM%252CDaJ5uzl9t8P7pM%252C_%253Bm7L9JZjqxiw5UM%252C4UFsASNZOZeWjM%252C_&usg=AI4_-kRoL07NezKWbSv2e-iNLOvcBVm5ew&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_h16BAgzEAE#imgrc=kgbmZN9Ljp0ktM",
+        "source": "https://handletheheat.com/homemade-toffee-bits/",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/4bb6be043e9254eee17bf1ffaa65166ea8422c53f6dc83436de622d06c41b57e.jpeg",
+        "original": "https://handletheheat.com/wp-content/uploads/2020/12/homemade-toffee-bits-SQUARE.jpg",
+        "title": "Homemade Toffee Bits",
+        "source_name": "Handle the Heat"
+      },
+      {
+        "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=iu&ictx=1&vet=1&fir=9n83T4ORVm0VzM%252CJS4aQUAVWKMm2M%252C_%253BNXpDbbjz8Ek_rM%252Clqfm2OrepIU_JM%252C_%253BkgbmZN9Ljp0ktM%252CArLMQpetDkVWGM%252C_%253BSOUkeMGypK8IgM%252C7Y3wBDax7rXEjM%252C_%253BVGw2sZ3wNYrLpM%252CaNmQwUVKjE8wHM%252C_%253BfZL7PIbVamJrGM%252CDaJ5uzl9t8P7pM%252C_%253Bm7L9JZjqxiw5UM%252C4UFsASNZOZeWjM%252C_&usg=AI4_-kRoL07NezKWbSv2e-iNLOvcBVm5ew&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_h16BAg1EAE#imgrc=SOUkeMGypK8IgM",
+        "source": "https://www.momontimeout.com/better-than-anything-toffee-recipe/",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/4bb6be043e9254ee4cc6c14a0eb7c4dfcf9ddebfad4f46f989505df35935d462.jpeg",
+        "original": "https://www.momontimeout.com/wp-content/uploads/2017/11/toffee-recipe-.jpeg",
+        "title": "Better Than Anything Toffee Recipe",
+        "source_name": "Mom On Timeout"
+      },
+      {
+        "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=iu&ictx=1&vet=1&fir=9n83T4ORVm0VzM%252CJS4aQUAVWKMm2M%252C_%253BNXpDbbjz8Ek_rM%252Clqfm2OrepIU_JM%252C_%253BkgbmZN9Ljp0ktM%252CArLMQpetDkVWGM%252C_%253BSOUkeMGypK8IgM%252C7Y3wBDax7rXEjM%252C_%253BVGw2sZ3wNYrLpM%252CaNmQwUVKjE8wHM%252C_%253BfZL7PIbVamJrGM%252CDaJ5uzl9t8P7pM%252C_%253Bm7L9JZjqxiw5UM%252C4UFsASNZOZeWjM%252C_&usg=AI4_-kRoL07NezKWbSv2e-iNLOvcBVm5ew&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_h16BAg0EAE#imgrc=VGw2sZ3wNYrLpM",
+        "source": "https://dinnerthendessert.com/easy-toffee-bits/",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/4bb6be043e9254ee5c0d1d808a6749f39a26330aa6f0f54c7893f728bf7ccaae.jpeg",
+        "original": "https://dinnerthendessert.com/wp-content/uploads/2022/02/Easy-Toffee-Bits-11-hero.jpg",
+        "title": "Easy Toffee Bits",
+        "source_name": "Dinner, then Dessert"
+      },
+      {
+        "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=iu&ictx=1&vet=1&fir=9n83T4ORVm0VzM%252CJS4aQUAVWKMm2M%252C_%253BNXpDbbjz8Ek_rM%252Clqfm2OrepIU_JM%252C_%253BkgbmZN9Ljp0ktM%252CArLMQpetDkVWGM%252C_%253BSOUkeMGypK8IgM%252C7Y3wBDax7rXEjM%252C_%253BVGw2sZ3wNYrLpM%252CaNmQwUVKjE8wHM%252C_%253BfZL7PIbVamJrGM%252CDaJ5uzl9t8P7pM%252C_%253Bm7L9JZjqxiw5UM%252C4UFsASNZOZeWjM%252C_&usg=AI4_-kRoL07NezKWbSv2e-iNLOvcBVm5ew&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_h16BAgrEAE#imgrc=fZL7PIbVamJrGM",
+        "source": "https://frostingandglue.com/toffee-recipe/",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6GvJH2XrNV6lO0KlV-ieUtvosB23sWopatiofY1C2A&s",
+        "original": "https://frostingandglue.com/wp-content/uploads/2021/05/process-Toffee-recipe-6-scaled-735x980.jpg",
+        "title": "Toffee Recipe",
+        "source_name": "Frosting and Glue"
+      },
+      {
+        "link": "https://www.google.com/search?q=Toffee&sca_esv=570671288&tbm=isch&source=iu&ictx=1&vet=1&fir=9n83T4ORVm0VzM%252CJS4aQUAVWKMm2M%252C_%253BNXpDbbjz8Ek_rM%252Clqfm2OrepIU_JM%252C_%253BkgbmZN9Ljp0ktM%252CArLMQpetDkVWGM%252C_%253BSOUkeMGypK8IgM%252C7Y3wBDax7rXEjM%252C_%253BVGw2sZ3wNYrLpM%252CaNmQwUVKjE8wHM%252C_%253BfZL7PIbVamJrGM%252CDaJ5uzl9t8P7pM%252C_%253Bm7L9JZjqxiw5UM%252C4UFsASNZOZeWjM%252C_&usg=AI4_-kRoL07NezKWbSv2e-iNLOvcBVm5ew&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ_h16BAgvEAE#imgrc=m7L9JZjqxiw5UM",
+        "source": "https://sugarspunrun.com/toffee-recipe/",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgt84zcrV8W3f71FrGto_RKjvYy87g25cxl0S6tPNww&s",
+        "original": "https://sugarspunrun.com/wp-content/uploads/2022/11/Homemade-toffee-recipe-1-of-1-2.jpg",
+        "title": "Toffee Recipe - Sugar Spun Run",
+        "source_name": "Sugar Spun Run"
+      }
+    ],
+    "inline_videos": [
+      {
+        "position": 1,
+        "title": "How to Make Toffee | My Favorite Holiday Treat!",
+        "link": "https://www.youtube.com/watch?v=2ai5701_p0g",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/b6a1d8affe9b0205184ff1786013f8b605762601e7296b85a9135079f7c64278.jpeg",
+        "channel": "Preppy Kitchen",
+        "platform": "YouTube",
+        "date": "Dec 16, 2021",
+        "key_moments": [
+          {
+            "time": "01:09",
+            "title": "Adding half a teaspoon of salt",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=69",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCzXMYI3VV2PoGbwICkHEsB1GeEf6bX9SzGlsvj1bwkA&s"
+          },
+          {
+            "time": "01:22",
+            "title": "Set this over medium heat",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=82",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6b6PM9M3aaQilL3ODIoSyVXNGFj8efZtCl20K6EHMw&s"
+          },
+          {
+            "time": "01:35",
+            "title": "Get this to 300 degrees",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=95",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMOItWHZIyZhOBZ84EKdkY2G0XTZeCp4yYRZfySuLHZw&s"
+          },
+          {
+            "time": "02:03",
+            "title": "Stirring this frequently over medium heat",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=123",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo_PkIT_4pUyLrUqA5vxA42FphtiaTQT2-yCkNNnMKcw&s"
+          },
+          {
+            "time": "02:28",
+            "title": "Heating sugar and water",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=148",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo67ORMSxg-urt0jHFQ-9mEidZ5FLOw_2j-EHVXmLOsw&s"
+          },
+          {
+            "time": "04:54",
+            "title": "Set this aside for two minutes to cool",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=294",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTehvbekAdccvyocYZ8sov6ErRVuwGYYynii-HjuWECw&s"
+          },
+          {
+            "time": "05:10",
+            "title": "Sprinkle those chocolate chips on top",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=310",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaG1ZLGR5zzWxJY507bJaJFLbY-lQMbixk56EpkXNmDQ&s"
+          },
+          {
+            "time": "05:41",
+            "title": "Top it with some more chopped pecans",
+            "link": "https://www.youtube.com/watch?v=2ai5701_p0g&t=341",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7gc8s9ZqUWaAYNMA2X99uU7j7ksDJWULwNxLU4t7jg&s"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "title": "How To Make Toffee",
+        "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/b6a1d8affe9b02057e0adcba59aaa5a050347ea7b2b15b77263779e24f62abdf.jpeg",
+        "channel": "Sugar Spun Run",
+        "platform": "YouTube",
+        "date": "Dec 3, 2018",
+        "key_moments": [
+          {
+            "time": "00:00",
+            "title": "Introduction",
+            "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8&t=0",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAcZQRVAyKrNiP0ahDnxdfAzaloeiBEWywcQiL9t_lRw&s"
+          },
+          {
+            "time": "00:22",
+            "title": "Line a 9x9 pan with parchment paper and scatter coarsely chopped almonds evenly over the bottom. Set aside.",
+            "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8&t=22",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRZaaN62tKTTy7MycliWw_dsraDPTNJPMiVzO4Y5aJ9Q&s"
+          },
+          {
+            "time": "00:43",
+            "title": "Combine butter, sugar, water, and salt in a medium-sized pot over medium heat. Meanwhile measure out your vanilla extract and have it ready nearby.",
+            "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8&t=43",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfANpnlqY8VMdzIz2sNZEAJoQYuAB2xOzC3DFgpCXz5w&s"
+          },
+          {
+            "time": "01:22",
+            "title": "Stir ingredients frequently over medium heat. During this time (only before boiling), use a wet pastry brush to brush down the sides where any sugar may settle on the side of the pot to prevent sugar crystals. Continue to stir frequently until mixture comes to a boil (this may take a while, have patience and do not turn up the heat or you will ruin your toffee).",
+            "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8&t=82",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgaU3NPYDflTAnDUd0hOrqjDPzOr_4kIQKWvzRYrk_mw&s"
+          },
+          {
+            "time": "01:51",
+            "title": "Once the mixture comes to a boil, attach your candy thermometer. Make sure that the point of the candy thermometer is not touching the bottom of your pan.",
+            "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8&t=111",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPZv0A6giFsYgfJE03n2U1QE9YuFJdYFuSfQVReMH-w&s"
+          },
+          {
+            "time": "02:56",
+            "title": "Pour mixture evenly into your prepared pan over the almonds. Allow to sit for 5 minutes and then sprinkle chocolate chips evenly overtop the mixture. Cover with foil and allow to sit another 5 minutes, then remove the foil and use a spatula to gently spread chocolate chips evenly over your toffee.",
+            "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8&t=176",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugiztLwev653g5oRRqzwGIx4u2_sfJMZAfbZ_UwG9xA&s"
+          },
+          {
+            "time": "03:30",
+            "title": "Allow to cool completely at room temperature before breaking and serving.",
+            "link": "https://www.youtube.com/watch?v=HO_yc6Jj3H8&t=210",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkR-KYmYvlOLuht7B8vrNWLi2Ap1nzfBvpOqZCWsneDw&s"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "title": "Easy Honeycomb Toffee Recipe",
+        "link": "https://www.youtube.com/watch?v=e2Fo_oJb_hc",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/b6a1d8affe9b0205f0a56278c384a0fb46ec4742de6f1a9f21ab9797b7a833b4.jpeg",
+        "channel": "Original Recipes by Tasting Table",
+        "platform": "YouTube",
+        "date": "4 days ago"
+      }
+    ],
+    "related_questions": [
+      {
+        "question": "What is the difference between caramel and toffee?",
+        "snippet": "Toffee vs Caramel The difference between toffee and caramel is that caramel is made with white granulated sugar and cooked to 340 degrees Fahrenheit, whereas toffee is made with butter and brown sugar and cooked to 295 - 309 degrees Fahrenheit.",
+        "title": "What Is the Difference Between Toffee, Caramel, and Butterscotch?",
+        "link": "https://www.webstaurantstore.com/blog/2646/difference-between-toffee-caramel-and-butterscotch.html#:~:text=and%20more%20breakable.-,Toffee%20vs%20Caramel,to%20295%20%2D%20309%20degrees%20Fahrenheit.",
+        "displayed_link": "https://www.webstaurantstore.com › blog › difference-be...",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjG8W_R_-fuohgqdbsdrLPTnAkOGrp-YXsOt-PZ0XIzQ&s",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIGNhcmFtZWwgYW5kIHRvZmZlZT8iLCJsayI6IkdqRjNhR0YwSUdseklIUm9aU0JrYVdabVpYSmxibU5sSUdKbGRIZGxaVzRnWTJGeVlXMWxiQ0JoYm1RZ2RHOW1abVZsIiwiYnMiOiJjLU15NXpJS3owZ3NVY2dzVmlqSlNGVkl5VXhMU3kxS3pVdE9WVWhLTFNsUFRjMVRTRTRzU3N4TnpWRkl6RXRSS01rSFNxZmFTMHpuNFpMbGtnQnJCT25LU0UzT0Jwc0FsWDVqeUNYTkpRWTNGeXlxa0phVFdKWmZaQy14SW94TGpVc1JUVEk1TVNjbk5VVWhNMF9CTVRlMUtETTUwVjVpR1lzQUl3QSIsImlkIjoiZmNfMyJ9",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIGNhcmFtZWwgYW5kIHRvZmZlZT8iLCJsayI6IkdqRjNhR0YwSUdseklIUm9aU0JrYVdabVpYSmxibU5sSUdKbGRIZGxaVzRnWTJGeVlXMWxiQ0JoYm1RZ2RHOW1abVZsIiwiYnMiOiJjLU15NXpJS3owZ3NVY2dzVmlqSlNGVkl5VXhMU3kxS3pVdE9WVWhLTFNsUFRjMVRTRTRzU3N4TnpWRkl6RXRSS01rSFNxZmFTMHpuNFpMbGtnQnJCT25LU0UzT0Jwc0FsWDVqeUNYTkpRWTNGeXlxa0phVFdKWmZaQy14SW94TGpVc1JUVEk1TVNjbk5VVWhNMF9CTVRlMUtETTUwVjVpR1lzQUl3QSIsImlkIjoiZmNfMyJ9"
+      },
+      {
+        "question": "What the heck is toffee?",
+        "snippet": "Toffee is a hard candy made mainly with sugar and butter. In America, the term \"English toffee\" is generally used for toffee prepared with a coating of chocolate and almonds.",
+        "title": "English Toffee - Recipe File - Cooking For Engineers",
+        "date": "Feb 5, 2006",
+        "link": "https://www.cookingforengineers.com/recipe/159/English-Toffee#:~:text=Toffee%20is%20a%20hard%20candy,coating%20of%20chocolate%20and%20almonds.",
+        "displayed_link": "https://www.cookingforengineers.com › recipe › English...",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/07e5dc94ffbd186659008658507e8cb7f96f470019d70cecebeeffe36d273110.jpeg",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCB0aGUgaGVjayBpcyB0b2ZmZWU/IiwibGsiOiJHaGQzYUdGMElIUm9aU0JvWldOcklHbHpJSFJ2Wm1abFpRIiwiYnMiOiJjLU15NXpJS3owZ3NVY2dzVmlqSlNGVkl5VXhMU3kxS3pVdE9WVWhLTFNsUFRjMVRTRTRzU3N4TnpWRkl6RXRSS01rSFNxZmFTMHpuNFpMbGtnQnJCT25LU0UzT0Jwc0FsWDVqeUNYTkpRWTNGeXlxa0phVFdKWmZaQy14SW94TGpVc1JUVEk1TVNjbk5VVWhNMF9CTVRlMUtETTUwVjVpR1lzQUl3QSIsImlkIjoiZmNfMyJ9",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCB0aGUgaGVjayBpcyB0b2ZmZWU%2FIiwibGsiOiJHaGQzYUdGMElIUm9aU0JvWldOcklHbHpJSFJ2Wm1abFpRIiwiYnMiOiJjLU15NXpJS3owZ3NVY2dzVmlqSlNGVkl5VXhMU3kxS3pVdE9WVWhLTFNsUFRjMVRTRTRzU3N4TnpWRkl6RXRSS01rSFNxZmFTMHpuNFpMbGtnQnJCT25LU0UzT0Jwc0FsWDVqeUNYTkpRWTNGeXlxa0phVFdKWmZaQy14SW94TGpVc1JUVEk1TVNjbk5VVWhNMF9CTVRlMUtETTUwVjVpR1lzQUl3QSIsImlkIjoiZmNfMyJ9"
+      },
+      {
+        "question": "What is toffee flavor?",
+        "snippet": "What Is Toffee? Toffee is made from sugar and butter. Chefs cook toffee longer than caramel so it reaches a hardened, brittle state. (Check out Aunt Rose's Fantastic Butter Toffee for a tasty example.) The candy is usually topped with chocolate, nuts or coconut—and gobbled up instantly.",
+        "title": "Here's the Difference Between Caramel, Butterscotch and Toffee",
+        "date": "Mar 15, 2023",
+        "link": "https://www.tasteofhome.com/article/the-difference-between-caramel-butterscotch-and-toffee/#:~:text=What%20Is%20Toffee%3F,coconut%E2%80%94and%20gobbled%20up%20instantly.",
+        "displayed_link": "https://www.tasteofhome.com › article › the-difference-b...",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0b2ZmZWUgZmxhdm9yPyIsImxrIjoiR2hWM2FHRjBJR2x6SUhSdlptWmxaU0JtYkdGMmIzSSIsImJzIjoiYy1NeTV6SUt6MGdzVWNnc1ZpakpTRlZJeVV4TFN5MUt6VXRPVlVoS0xTbFBUYzFUU0U0c1NzeE56VkZJekV0UktNa0hTcWZhUzB6bjRaTGxrZ0JyQk9uS1NFM09CcHNBbFg1anlDWE5KUVkzRnl5cWtKYVRXSlpmWkMteElveExqVXNSVFRJNU1TY25OVVVoTTBfQk1UZTFLRE01MFY1aUdZc0FJd0EiLCJpZCI6ImZjXzMifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0b2ZmZWUgZmxhdm9yPyIsImxrIjoiR2hWM2FHRjBJR2x6SUhSdlptWmxaU0JtYkdGMmIzSSIsImJzIjoiYy1NeTV6SUt6MGdzVWNnc1ZpakpTRlZJeVV4TFN5MUt6VXRPVlVoS0xTbFBUYzFUU0U0c1NzeE56VkZJekV0UktNa0hTcWZhUzB6bjRaTGxrZ0JyQk9uS1NFM09CcHNBbFg1anlDWE5KUVkzRnl5cWtKYVRXSlpmWkMteElveExqVXNSVFRJNU1TY25OVVVoTTBfQk1UZTFLRE01MFY1aUdZc0FJd0EiLCJpZCI6ImZjXzMifQ%3D%3D"
+      },
+      {
+        "question": "What is toffee called in America?",
+        "snippet": "The Toffee of Today The English toffee eaten with regularity in America is also called buttercrunch. What's the difference? Primarily, the difference rests in the ingredients. Toffee in Britain is made with brown sugar, whereas buttercrunch is made with white granulated sugar.",
+        "title": "The History of English Butter Toffee - Woody Candy Company",
+        "link": "https://woodycandy.com/english-butter-toffee/#:~:text=The%20Toffee%20of%20Today&text=The%20English%20toffee%20eaten%20with,made%20with%20white%20granulated%20sugar.",
+        "displayed_link": "https://woodycandy.com › english-butter-toffee",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGbnTRGXuLvJYZLzQojg4lEeBLdMAvHAxZmgEOCOm9gg&s",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0b2ZmZWUgY2FsbGVkIGluIEFtZXJpY2E/IiwibGsiOiJHaUIzYUdGMElHbHpJSFJ2Wm1abFpTQmpZV3hzWldRZ2FXNGdZVzFsY21sallRIiwiYnMiOiJjLU15NXpJS3owZ3NVY2dzVmlqSlNGVkl5VXhMU3kxS3pVdE9WVWhLTFNsUFRjMVRTRTRzU3N4TnpWRkl6RXRSS01rSFNxZmFTMHpuNFpMbGtnQnJCT25LU0UzT0Jwc0FsWDVqeUNYTkpRWTNGeXlxa0phVFdKWmZaQy14SW94TGpVc1JUVEk1TVNjbk5VVWhNMF9CTVRlMUtETTUwVjVpR1lzQUl3QSIsImlkIjoiZmNfMyJ9",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWVlVVlhVWE5YT1ROUFNHNWZaWGRUVGxZMFZrczRhR05GYVdGMlUyRkdUemQ0ZUVoaWFEbHRlVGg1ZGxKMFIyRjZkRWxrZEZRM1lYRmFiakZKY0U5VVJIQlRaVmRTRWhkUlNHOWtXbVJYTTBRdFlVVjNZbXRRZVV4WFZ6QkJNQm9pUVVwM2F5MDRaVGMzYjNjeFJXNVRSRkV0VURkeFIzWmpRelZuWkRWd1JGZGladyIsImZjdiI6IjMiLCJlaSI6IlFIb2RaZFczRC1hRXdia1B5TFdXMEEwIiwicWMiOiJDZ1owYjJabVpXVVFBSDMyaVNJXyIsInF1ZXN0aW9uIjoiV2hhdCBpcyB0b2ZmZWUgY2FsbGVkIGluIEFtZXJpY2E%2FIiwibGsiOiJHaUIzYUdGMElHbHpJSFJ2Wm1abFpTQmpZV3hzWldRZ2FXNGdZVzFsY21sallRIiwiYnMiOiJjLU15NXpJS3owZ3NVY2dzVmlqSlNGVkl5VXhMU3kxS3pVdE9WVWhLTFNsUFRjMVRTRTRzU3N4TnpWRkl6RXRSS01rSFNxZmFTMHpuNFpMbGtnQnJCT25LU0UzT0Jwc0FsWDVqeUNYTkpRWTNGeXlxa0phVFdKWmZaQy14SW94TGpVc1JUVEk1TVNjbk5VVWhNMF9CTVRlMUtETTUwVjVpR1lzQUl3QSIsImlkIjoiZmNfMyJ9"
+      }
+    ],
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Best Toffee Ever - Super Easy Recipe",
+        "link": "https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/",
+        "displayed_link": "https://www.allrecipes.com › ... › Toffee Recipes",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b056f72052677c4c24726e022794b59b9735.jpeg",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b0564260cb0834713e61909d882bd232728d.png",
+        "date": "Sep 30, 2022",
+        "snippet": "Toffee is a candy made by caramelizing sugar with butter. The mixture is heated until it reaches the hard crack stage (at least 300 degrees F), ...",
+        "snippet_highlighted_words": [
+          "Toffee"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "How To Make Toffee",
+              "link": "https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/#:~:text=How%20to%20Make%20Toffee"
+            },
+            {
+              "title": "Ingredients",
+              "link": "https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/#:~:text=Ingredients,-2%20cups%20unsalted%20butter"
+            },
+            {
+              "title": "Directions",
+              "link": "https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/#:~:text=Directions"
+            }
+          ]
+        },
+        "rich_snippet": {
+          "bottom": {
+            "detected_extensions": {
+              "rating": 4.7,
+              "votes": 1375,
+              "hr_min": 1
+            },
+            "extensions": [
+              "Rating: 4.7",
+              "1,375 votes",
+              "1 hr 40 min"
+            ]
+          }
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://www.allrecipes.com/recipe/73412/best-toffee-ever-super-easy/&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.allrecipes.com%2Frecipe%2F73412%2Fbest-toffee-ever-super-easy%2F",
+        "source": "Allrecipes"
+      },
+      {
+        "position": 2,
+        "title": "Toffee",
+        "link": "https://en.wikipedia.org/wiki/Toffee",
+        "displayed_link": "https://en.wikipedia.org › wiki › Toffee",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b0569e0215da18230c6a2b6cd56e878782d7.jpeg",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b05605182c6eaea72b61ce86021e0bd02533.png",
+        "snippet": "Toffee is a confection made by caramelizing sugar or molasses (creating inverted sugar) along with butter, and occasionally flour. The mixture is heated ...",
+        "snippet_highlighted_words": [
+          "Toffee"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "Honeycomb toffee",
+              "link": "https://en.wikipedia.org/wiki/Honeycomb_toffee"
+            },
+            {
+              "title": "Bonfire toffee",
+              "link": "https://en.wikipedia.org/wiki/Bonfire_toffee"
+            },
+            {
+              "title": "Moffat toffee",
+              "link": "https://en.wikipedia.org/wiki/Moffat_toffee"
+            },
+            {
+              "title": "Toffee hammer",
+              "link": "https://en.wikipedia.org/wiki/Toffee_hammer"
+            }
+          ]
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://en.wikipedia.org/wiki/Toffee&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FToffee",
+        "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:JS4aQUAVWKMJ:https://en.wikipedia.org/wiki/Toffee&cd=16&hl=en&ct=clnk&gl=us",
+        "related_pages_link": "https://www.google.com/search?sca_esv=570671288&q=related:https://en.wikipedia.org/wiki/Toffee+Toffee",
+        "source": "Wikipedia"
+      },
+      {
+        "position": 3,
+        "title": "Better Than Anything Toffee Recipe",
+        "link": "https://www.momontimeout.com/better-than-anything-toffee-recipe/",
+        "displayed_link": "https://www.momontimeout.com › better-than-anythin...",
+        "thumbnail": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b056a2b262e7f721c5ec3a24f9e8ebc7c515.jpeg",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b056c1cbcee069917c7728b6c12d8725af1f.png",
+        "date": "Dec 4, 2021",
+        "snippet": "The best toffee recipe EVER! Sweet milk chocolate, crunchy pecans, and rich, buttery toffee - what's not to love? Makes a great gift!",
+        "snippet_highlighted_words": [
+          "toffee",
+          "toffee"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "Toffee Recipe",
+              "link": "https://www.momontimeout.com/better-than-anything-toffee-recipe/#:~:text=Toffee%20Recipe,-The%20holiday%20season%20marks%20my"
+            },
+            {
+              "title": "Easy Toffee Candy",
+              "link": "https://www.momontimeout.com/better-than-anything-toffee-recipe/#:~:text=Easy%20Toffee%20Candy"
+            },
+            {
+              "title": "Top Tips For The Best Toffee",
+              "link": "https://www.momontimeout.com/better-than-anything-toffee-recipe/#:~:text=Top%20Tips%20for%20the%20Best%20Toffee"
+            }
+          ]
+        },
+        "rich_snippet": {
+          "bottom": {
+            "detected_extensions": {
+              "rating": 5,
+              "votes": 102,
+              "min": 25
+            },
+            "extensions": [
+              "Rating: 5",
+              "102 votes",
+              "25 min"
+            ]
+          }
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://www.momontimeout.com/better-than-anything-toffee-recipe/&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.momontimeout.com%2Fbetter-than-anything-toffee-recipe%2F",
+        "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:7Y3wBDax7rUJ:https://www.momontimeout.com/better-than-anything-toffee-recipe/&cd=17&hl=en&ct=clnk&gl=us",
+        "source": "Mom On Timeout"
+      },
+      {
+        "position": 4,
+        "title": "Toffee Recipe",
+        "link": "https://sugarspunrun.com/toffee-recipe/",
+        "displayed_link": "https://sugarspunrun.com › Desserts › Candy",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwjldsYaPoWZQoySpRR4z09rBOwvEXuxlHlt0_whlqOMoxI3-kyD4j&usqp=CAE&s",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b0565b4bd4bdfe457837e2019c3e9ac75c83.png",
+        "date": "Dec 6, 2022",
+        "snippet": "My toffee recipe makes buttery, crunchy homemade toffee after just 15 minutes on the stove. Includes lots of tips for making candy at home!",
+        "snippet_highlighted_words": [
+          "toffee",
+          "toffee"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "A Foolproof Toffee Recipe",
+              "link": "https://sugarspunrun.com/toffee-recipe/#:~:text=A%20Foolproof%20Toffee%20Recipe"
+            },
+            {
+              "title": "What You Need",
+              "link": "https://sugarspunrun.com/toffee-recipe/#:~:text=What%20You%20Need"
+            },
+            {
+              "title": "How To Make Toffee",
+              "link": "https://sugarspunrun.com/toffee-recipe/#:~:text=%21-,How%20to%20Make%20Toffee"
+            }
+          ]
+        },
+        "rich_snippet": {
+          "bottom": {
+            "detected_extensions": {
+              "rating": 4.9,
+              "votes": 48,
+              "hr_min": 1
+            },
+            "extensions": [
+              "Rating: 4.9",
+              "48 votes",
+              "1 hr 25 min"
+            ]
+          }
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://sugarspunrun.com/toffee-recipe/&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fsugarspunrun.com%2Ftoffee-recipe%2F",
+        "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:4UFsASNZOZcJ:https://sugarspunrun.com/toffee-recipe/&cd=21&hl=en&ct=clnk&gl=us",
+        "source": "Sugar Spun Run"
+      },
+      {
+        "position": 5,
+        "title": "Homemade Toffee Bits Recipe",
+        "link": "https://handletheheat.com/homemade-toffee-bits/",
+        "displayed_link": "https://handletheheat.com › Recipes",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQPb6_IKy2iBA83hSxh5E3tEf6dhyDRqkqaHKz8LnRGE3daY5Ya6l&usqp=CAE&s",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b05606b7508e903d7e1d802ac064eb178391.png",
+        "date": "Dec 8, 2020",
+        "snippet": "Toffee is a crunchy, sweet, buttery, cooked sugar candy, similar to caramel and butterscotch. These three classic dessert components seem very ...",
+        "snippet_highlighted_words": [
+          "Toffee"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "Tessa's Recipe Rundown",
+              "link": "https://handletheheat.com/homemade-toffee-bits/#:~:text=Tessa%27s%20Recipe%20Rundown%E2%80%A6"
+            },
+            {
+              "title": "What Is Toffee?",
+              "link": "https://handletheheat.com/homemade-toffee-bits/#:~:text=What%20is%20Toffee%3F"
+            },
+            {
+              "title": "Tips For Making Toffee",
+              "link": "https://handletheheat.com/homemade-toffee-bits/#:~:text=Tips%20for%20Making%20Toffee%3A"
+            }
+          ]
+        },
+        "rich_snippet": {
+          "bottom": {
+            "detected_extensions": {
+              "rating": 4.8,
+              "votes": 63,
+              "min": 35
+            },
+            "extensions": [
+              "Rating: 4.8",
+              "63 votes",
+              "35 min"
+            ]
+          }
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://handletheheat.com/homemade-toffee-bits/&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fhandletheheat.com%2Fhomemade-toffee-bits%2F",
+        "source": "Handle the Heat"
+      },
+      {
+        "position": 6,
+        "title": "Easy Homemade Toffee Recipe",
+        "link": "https://www.iheartnaptime.net/homemade-toffee/",
+        "displayed_link": "https://www.iheartnaptime.net › Recipes › Desserts",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPh8Av2mZ-ArQXKREXkxBtd8M3unZC6S-9JSgEMINN3umHcJSBXpxa&usqp=CAE&s",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b0565de703d171f7d4f85812bac546f38932.png",
+        "date": "Dec 8, 2022",
+        "snippet": "This rich and buttery homemade toffee is easy to make and only takes about thirty minutes. Perfect for parties, holiday gifts, and snacking!",
+        "snippet_highlighted_words": [
+          "toffee"
+        ],
+        "rich_snippet": {
+          "bottom": {
+            "detected_extensions": {
+              "rating": 4.9,
+              "votes": 118,
+              "min": 35
+            },
+            "extensions": [
+              "Rating: 4.9",
+              "118 votes",
+              "35 min"
+            ]
+          }
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://www.iheartnaptime.net/homemade-toffee/&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.iheartnaptime.net%2Fhomemade-toffee%2F",
+        "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:sZ-ahcqfg1IJ:https://www.iheartnaptime.net/homemade-toffee/&cd=28&hl=en&ct=clnk&gl=us",
+        "source": "I Heart Naptime"
+      },
+      {
+        "position": 7,
+        "title": "Homemade Toffee",
+        "link": "https://therecipecritic.com/homemade-toffee/",
+        "displayed_link": "https://therecipecritic.com › Desserts",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PSzw-RJ60DVULj7wtAXvObR09pN9KiTpjVTdMfsiC8iIO79TbwsN&usqp=CAE&s",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b0561aa0bc63d3383d5f4f86c435f095c432.png",
+        "date": "Nov 2, 2021",
+        "snippet": "Homemade toffee is super simple with no candy thermometer required! This buttery chocolate treat is a must-make recipe this holiday season!",
+        "snippet_highlighted_words": [
+          "toffee"
+        ],
+        "rich_snippet": {
+          "bottom": {
+            "detected_extensions": {
+              "rating": 5,
+              "vote": 1,
+              "min": 30
+            },
+            "extensions": [
+              "Rating: 5",
+              "1 vote",
+              "30 min"
+            ]
+          }
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://therecipecritic.com/homemade-toffee/&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Ftherecipecritic.com%2Fhomemade-toffee%2F",
+        "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:n5kQwF6DrUsJ:https://therecipecritic.com/homemade-toffee/&cd=29&hl=en&ct=clnk&gl=us",
+        "source": "The Recipe Critic"
+      },
+      {
+        "position": 8,
+        "title": "Easy Homemade Toffee Recipe {+VIDEO}",
+        "link": "https://lilluna.com/toffee-recipe/",
+        "displayed_link": "https://lilluna.com › Recipes › Desserts › Candy",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsTKdj5PD776eyiqsiv_YyTRinCSSPJGKSh43H9OYwTd6oXClfcRKe&usqp=CAE&s",
+        "favicon": "https://serpapi.com/searches/651d7a3ef0adfbe52903b779/images/d29c0acec0948011eef3647e3628b056f4d845d58c55e7a7954e261f4be4b01e.png",
+        "date": "Dec 5, 2022",
+        "snippet": "Toffee is a hard candy usually made by boiling together sugar and butter. It is often topped with chocolate. It's a popular recipe to make for ...",
+        "snippet_highlighted_words": [
+          "Toffee"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "Let's Talk Toffee",
+              "link": "https://lilluna.com/toffee-recipe/#:~:text=Let%27s%20Talk%20Toffee"
+            },
+            {
+              "title": "Toffee Variations",
+              "link": "https://lilluna.com/toffee-recipe/#:~:text=Toffee%20variations"
+            },
+            {
+              "title": "Toffee Recipe",
+              "link": "https://lilluna.com/toffee-recipe/#:~:text=Toffee%20Recipe,-By%3A%20Lil%27%20Luna"
+            }
+          ]
+        },
+        "rich_snippet": {
+          "bottom": {
+            "detected_extensions": {
+              "rating": 5,
+              "votes": 56,
+              "hr_min": 2
+            },
+            "extensions": [
+              "Rating: 5",
+              "56 votes",
+              "2 hr 25 min"
+            ]
+          }
+        },
+        "about_page_link": "https://www.google.com/search?q=About+https://lilluna.com/toffee-recipe/&tbm=ilp",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Flilluna.com%2Ftoffee-recipe%2F",
+        "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:23iyTUD3YNMJ:https://lilluna.com/toffee-recipe/&cd=30&hl=en&ct=clnk&gl=us",
+        "source": "Lil' Luna"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "toffee candy",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=Toffee+candy&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhWEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee+candy"
+      },
+      {
+        "block_position": 1,
+        "query": "toffee recipe",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=Toffee+recipe&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhTEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee+recipe"
+      },
+      {
+        "block_position": 1,
+        "query": "toffee vs caramel",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=Toffee+vs+caramel&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhNEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee+vs+caramel"
+      },
+      {
+        "block_position": 1,
+        "query": "soft toffee",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=Soft+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhMEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Soft+toffee"
+      },
+      {
+        "block_position": 1,
+        "query": "english toffee",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=English+Toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhKEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=English+Toffee"
+      },
+      {
+        "block_position": 1,
+        "query": "english toffee recipe",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=English+toffee+recipe&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhJEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=English+toffee+recipe"
+      },
+      {
+        "block_position": 1,
+        "query": "toffee bits",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=Toffee+bits&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhIEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee+bits"
+      },
+      {
+        "block_position": 1,
+        "query": "soft toffee recipe",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=Soft+toffee+recipe&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQ1QJ6BAhHEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Soft+toffee+recipe"
+      }
+    ],
+    "refine_this_search": [
+      {
+        "query": "Hershey's",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=hershey%27s+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAB6BQiBARAB",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=hershey%27s+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqzeBOgq5j0jCKYP6H92QUwzbglwe8rGw7ajZNhBdRBZrqwcr2nZb-wgK5fJs"
+      },
+      {
+        "query": "Trader Joe's",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=trader+joe%27s+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAF6BQiBARAC",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=trader+joe%27s+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRlxQbzVu8disFRdH-bPgzIyF4LGUG9dcucneeD3ULRz3WxtSIyHrhi2XH6DM6thIJtPoDoSqs"
+      },
+      {
+        "query": "Russell Stover",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=russell+stover+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAJ6BQiBARAD",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=russell+stover+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSTuN0nbHMIjcPpWFoZpnTMBN4kYtvJnmDCSZ1WNtOKoAukSoddF6ZlQosw7ZyAJJZ2Or8p0s5u"
+      },
+      {
+        "query": "Bar",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=toffee+toffee+bars&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAB6BAh-EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=toffee+toffee+bars",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQreSzT_VbtJ9y_FnkIv8GxM_V55staLJui5wUIBf-4RTuPA2gkz38J8xObVQoiFZ1HaXrLuZE"
+      },
+      {
+        "query": "Truffle / Bonbon",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=toffee+bon+bons&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAF6BAh-EAI",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=toffee+bon+bons",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRquN7Gskn3X4Nh_Si0MJtLh3s5aYyqWk7jYdAIv2becIUro8X79hkmrzN69j_jfiegD9bIDw"
+      },
+      {
+        "query": "Gold",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=gold+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAB6BQiAARAB",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=gold+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ25X9kVxdX3F23ZDXSJ3Bb1EvQ1WyceFWA_spi3Am1wU97mhBIaCygp6Vd_EybziDAQQTERIA"
+      },
+      {
+        "query": "Old-fashioned",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=old-fashioned+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAF6BQiAARAC",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=old-fashioned+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSiYGdjWrBC_TiLRZXmMtRrWDEEj5KMQsztbluqiGG0CdboAFxWJ_-2AW6xTqYLLMEALT9TFzs"
+      },
+      {
+        "query": "Yellow",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=yellow+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAJ6BQiAARAD",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=yellow+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQoMnypmybhWA97Qjkv-6e2YueDdT0yVl4_u8Vmz_KduOmx61E6-Y1F9yhdlxDMDHV2yAfhAUf2"
+      },
+      {
+        "query": "Red",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=red+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAN6BQiAARAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=red+toffee",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTvN-WWZkpPM9rcA8vEzVDavKDl09TH0dMxIzbm4ne7IzS0ARfZTZNNRqyF4RGK0XBnSB4TQlyr"
+      },
+      {
+        "query": "White",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=white+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAR6BQiAARAF",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=white+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTXT-ggw_u1BKsQlQvsSAKyfMiABwwtpNr1yQx9f9G18JAq6y87uaL6SmP3WxhDv0x76Av5K9M"
+      },
+      {
+        "query": "Blue",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=blue+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAV6BQiAARAG",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=blue+toffee",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT5CHaloaRcHPMjt9gCQNWLvHIrEoy1EwjN2Z-k_AC2w7xg6oiKvBJJqVCX09U"
+      },
+      {
+        "query": "Apple",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=toffee+apple+candy&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAB6BAh_EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=toffee+apple+candy",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTyU_09_zE1m6x44NNTS41YlK6s-PPPvtsfL6qmE4ddUFCRtdCpHmYVBIXnx4bTPdoN4Jw2uKE"
+      },
+      {
+        "query": "Strawberry",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=strawberry+toffee+candy&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAF6BAh_EAI",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=strawberry+toffee+candy",
+        "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRwtIElUaVkDe3nFFQsEN1wpe5jPW2xoEDm52F-jvpkLlIaGupy2GzWt9elQuVXWXXiVXDLwPs"
+      },
+      {
+        "query": "Fruit",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=fruit+caramels&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAJ6BAh_EAM",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=fruit+caramels",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQIAw6Z_BupvVr8l9WGWIlMFNR7duttC0uXGsjPvHBCXRripndSNHhgP44eaik18VxU4Lohdko"
+      },
+      {
+        "query": "Mint",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=mint+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAN6BAh_EAQ",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=mint+toffee",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR1NVVlqCUmL352IPS1iNDxPXSaHDGNbQgEm5yQ6cROPQ454SK76wCrX6k6o5W29ecAVCtLZoY"
+      },
+      {
+        "query": "Assorted",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=assorted+toffee+toffee&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAR6BAh_EAU",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=assorted+toffee+toffee",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQPYFKSWMFocdzT8AtwyioLn1B2vk63I17Wa8nmumG_k4DqHR2tFZhjrNMpymc5JpTB10niOlij"
+      },
+      {
+        "query": "Box",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=toffee+toffee+box&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAB6BAh9EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=toffee+toffee+box",
+        "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSc6O-Mo5O_lGm1EzkSfOACbA4miiHxkYedRaFnUR93CeJ5u101JVjbJ-6Hda0LxDSTOxPbZkU"
+      },
+      {
+        "query": "Bag",
+        "link": "https://www.google.com/search?sca_esv=570671288&q=toffee+toffee+bag&sa=X&ved=2ahUKEwjV15vV0NyBAxVmQjABHciaBdoQs9oBKAF6BAh9EAI",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=toffee+toffee+bag",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRp-tAuuSdYE7FhK9Y5y-U-Ypt2OL2MS8BY2dWZ4ZNnWdADc3NmExrvWiZPBEG8WPPKQJuyHw1A"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=Toffee&oq=Toffee&start=10&sourceid=chrome&ie=UTF-8",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=Toffee&oq=Toffee&start=10&sourceid=chrome&ie=UTF-8",
+        "3": "https://www.google.com/search?q=Toffee&oq=Toffee&start=20&sourceid=chrome&ie=UTF-8",
+        "4": "https://www.google.com/search?q=Toffee&oq=Toffee&start=30&sourceid=chrome&ie=UTF-8",
+        "5": "https://www.google.com/search?q=Toffee&oq=Toffee&start=40&sourceid=chrome&ie=UTF-8"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Toffee&start=40"
+      }
+    }
+  }
