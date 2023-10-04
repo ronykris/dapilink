@@ -45,9 +45,9 @@ const uploadToIpfs = async (jsonObj: object, id: string): Promise<string | null>
     if (execute.error) {
       throw new Error("execution error: " + execute.error.message)
     }
-    if (execute.stderr) {
+    /*if (execute.stderr) {
       throw new Error("execution error: " + execute.stderr.toString())
-    }
+    }*/
     const output = execute.stdout.toString()    
     const cidRegex = /\bQm[1-9A-HJ-NP-Za-km-z]{44}\b/
     const cidMatch = output.match(cidRegex);
