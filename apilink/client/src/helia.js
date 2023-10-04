@@ -1,4 +1,4 @@
-const { createHelia } = require('helia')
+const createHelia = require('helia')
 const { json } = require('@helia/json')
 
 const helia = async () => {
