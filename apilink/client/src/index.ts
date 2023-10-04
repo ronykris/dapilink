@@ -19,7 +19,7 @@ var overrides = {
 
 const retrieveFromIpfs = async (cid: string): Promise<object | null> => {
   const cmd = `ipfs cat /ipfs/${cid}`
-  const execute = spawnSync(cmd, {encoding: 'utf8'})
+  const execute = spawnSync('ipfs', ['cat', `/ipfs/${cid}`], {encoding: 'utf8'})
   if (execute.error) {
     throw new Error("execution error: " + execute.error.message)
   }

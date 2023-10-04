@@ -60,7 +60,7 @@ contract Apilink {
         user = msg.sender;        
         toInvoke = true;
         callid = _callid;        
-        nodeMapper[callid] = setChosenNode();
+        setChosenNode(callid);
         
         emit invoked(toInvoke, _callid);
 
@@ -102,10 +102,10 @@ contract Apilink {
         emit logInStatus(loggedIn);                
     }
 
-    function setChosenNode() internal returns (uint256) {
+    function setChosenNode(uint256 _callid) internal {
         require(nodeList.length > 0, "No items available");
         index = ((index + 1) % nodeList.length) + 1;  
-        return index;      
+        nodeMapper[_callid] = index; 
     }
 
     function getChosenNode(uint256 _callid) external view returns (uint256) {

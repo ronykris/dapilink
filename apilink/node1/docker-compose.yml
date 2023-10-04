@@ -1,0 +1,30 @@
+version: '3.3'
+
+services:
+  node-ipfs:
+    container_name: ipfs-node
+    image: ipfs/kubo:latest
+    build: .      
+    restart: unless-stopped
+    volumes:
+      - /tmp/ipfs-docker-data:/data/ipfs      
+      - /tmp/ipfs-docker-staging:/export
+    environment:
+      - IPFS_PATH=/data/ipfs
+    ports:      
+      - 4001:4001/tcp
+      - 4001:4001/udp
+      - 127.0.0.1:5001:5001
+      - 127.0.0.1:8080:8080
+  
+    
+  
+  nodejs:
+    container_name: dapilinknode
+    image: dapilinknode:latest
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - /home/roger/dev/dapilink/apilink/node1:/app

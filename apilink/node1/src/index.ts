@@ -33,14 +33,15 @@ const triggerJob = async (endpoint: string, method: string): Promise<Object> => 
 
 const jsonToFile = async (jsonObj: object, id: string): Promise<string> => {    
     const buffer = Buffer.from(JSON.stringify(jsonObj))
-    const filePath = path.resolve(`./${id}.json`)
+    const filePath = `/tmp/ipfs-docker-staging/${id}.json`
     fs.writeFileSync(filePath, buffer)    
-    return path.resolve(filePath)
+    return filePath
 }
+
 
 const uploadToIpfs = async (jsonObj: object, id: string): Promise<string | null> => {
     const cmd = `ipfs add ${await jsonToFile(jsonObj, id)}`
-    const execute = spawnSync(cmd)
+    const execute = spawnSync('ipfs', ['add', `${await jsonToFile(jsonObj, id)}`])
     if (execute.error) {
       throw new Error("execution error: " + execute.error.message)
     }

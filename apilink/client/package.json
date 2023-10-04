@@ -5,18 +5,21 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "tsc -p . && ts-node src/test.ts",
+    "build": "tsc -p . && ts-node src/helia.ts",
     "start": "tsc -p . && ts-node src/index.ts",
-    "testClient": "tsc -p . && ts-node src/testLinkClient.ts"
+    "testClient": "tsc -p . && ts-node src/testLinkClient.ts",
+    "helia": "tsc -p . && ts-node src/helia.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@helia/json": "^1.0.2",
     "@oasisprotocol/sapphire-paratime": "^1.1.1",
+    "child_process": "^1.0.2",
     "dotenv": "^16.3.1",
     "ethers": "^5.4",
+    "helia": "^2.0.3",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
-    "web3": "^4.1.1",
-    "web3.storage": "^4.5.5"
+    "typescript": "^5.2.2"
   }
 }
