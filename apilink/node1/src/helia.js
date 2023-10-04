@@ -1,5 +1,5 @@
-import {createHelia} from 'helia'
-import { json } from '@helia/json'
+const createHelia = require('helia')
+const { json } = require ('@helia/json')
 
 const helia = async () => {
     const helia = await createHelia()

@@ -35,19 +35,15 @@ contract Apilink {
 
     constructor() {                
         toInvoke = false; 
-        callid = 0;  
-        loggedIn = false;
+        callid = 0;   
         index = 0;            
         nodeCount = 0;           
     }    
 
     event invoked(bool invoke, uint256 id);
-    event logInSuccess(bool passwordset);
-    event logInStatus(bool loginStatus);
+    event logInSuccess(bool passwordset);    
     event resultsRcvd(bool);
-    //event log(Apicalldetails api);
-    //event logNode(string text, NodeDetails node);
-
+    
     function createApiCall(uint256 _callid, string calldata _endpoint, string calldata _method, string calldata _body, string calldata _headers) external payable {
         require(_callid > 0, "Call id cannot be null");
         require(bytes(_endpoint).length > 0, "Endpoint cannot be empty");
@@ -92,14 +88,12 @@ contract Apilink {
         return nodeIndexes[_node];
     }
 
-    function isLoggedIn(string calldata _code) external {
+    function isLoggedIn(string calldata _code) external view returns(bool){
         require(
             keccak256(bytes(nodes[msg.sender].password)) == keccak256(bytes(string(abi.encodePacked(msg.sender, _code)))),
             "No pancakes for you"
-        );
-        loggedIn = true;
-        //emit logNode('success', nodes[msg.sender]);
-        emit logInStatus(loggedIn);                
+        );    
+        return true;
     }
 
     function setChosenNode(uint256 _callid) internal {

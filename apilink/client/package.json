@@ -19,6 +19,8 @@
     "dotenv": "^16.3.1",
     "ethers": "^5.4",
     "helia": "^2.0.3",
+    "interface-datastore": "^8.2.5",
+    "it-pipe": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }

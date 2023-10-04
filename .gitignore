@@ -13,3 +13,5 @@ artifacts
 dist
 cheatsheet
 .env
+*.tar.gz
+go-ipfs/

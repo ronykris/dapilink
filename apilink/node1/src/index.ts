@@ -72,20 +72,20 @@ const invoke = async () => {
             console.log(node._hex)
             console.log(process.env.NODEID)
             if ( node._hex === process.env.NODEID ) {
-                let isLoggedInTx = await contractWithSigner.isLoggedIn(code)
-                console.log('Is logged in tx: ', isLoggedInTx)                
-                contractWithSigner.on('logInStatus', async(isLoggedIn) => {
-                    if (isLoggedIn === true) {
+                let isLoggedInStatus = await contractWithSigner.isLoggedIn(code)
+                //console.log('Is logged in tx: ', isLoggedInTx)                
+                //contractWithSigner.on('logInStatus', async(isLoggedIn) => {
+                    if (isLoggedInStatus === true) {
                         let apiSpec = await contractWithSigner.getApiSpec(id)
                         console.log('API Spec', apiSpec)  
                         const result = await triggerJob(apiSpec.endpoint, apiSpec.method)
                         const cid = await uploadToIpfs(result, id)
                         if (cid) {
-                            const uploadTx = await contractWithSigner.setResults(id, cid)
+                            const uploadTx = await contractWithSigner.setResult(id, cid)
                             console.log('Upload results tx: ', uploadTx)
                         }
                     }
-                })                
+                //})                
             }       
         }   
     }) 

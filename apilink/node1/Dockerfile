@@ -1,5 +1,5 @@
 FROM ubuntu:latest as base
-RUN apt-get update && apt-get install bash sudo nodejs npm -y
+RUN apt update && apt install sudo bash nodejs npm -y
 WORKDIR /app
 
 COPY package.json .
