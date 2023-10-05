@@ -5,7 +5,7 @@ import { ethers } from 'ethers';
 import * as sapphire from '@oasisprotocol/sapphire-paratime';
 import dotenv from 'dotenv'
 import {abi} from '../Apilink.json'
-//import { spawnSync } from 'child_process';
+
 dotenv.config()
 
 const contractAddr = process.env.NEXT_PUBLIC_CONTRACT
@@ -67,9 +67,6 @@ export default function Home() {
     console.log(`Search Text: ${searchText}`);   
     console.log('loading...')
     
-    
-    //setTimeout(() => {window.location.href = url}, 15000)
-    
     console.log(contractAddr)
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const signer = sapphire.wrap(provider.getSigner())    
@@ -83,70 +80,51 @@ export default function Home() {
       value: ethers.utils.parseEther('0.01')
     }
   
-    const retrieveFromIpfs = async (cid) => {  
-      const execute = spawnSync('ipfs', ['cat', '--api', `/ip4/${process.env.NEXT_PUBLIC_IPFS_GATEWAY}/tcp/8080`, `${cid}`], {encoding: 'utf8'})
-      if (execute.error) {
-        throw new Error("execution error: " + execute.error.message)
-      }
-      if (execute.stderr) {
-        throw new Error("execution error: " + execute.stderr.toString())
-      }
-      try {
-        const jsonData = JSON.parse(execute.stdout.trim())
-        console.log(jsonData)
-        return jsonData
-      } catch (e) {
-        console.error(e)
-        return null
-      }  
-    }
-  
-  const invokeApi = async (callId, endpoint, method, body, headers) => {        
-      console.log(`CallID: ${callId}; endpoint: ${endpoint}; method: ${method}; body: ${body}; headers: ${headers}`)
-      const tx = await contractWithSigner.createApiCall(callId, endpoint, method, body, headers, overrides)
-      console.log(tx)     
+    const invokeApi = async (callId, endpoint, method, body, headers) => {  
+      return new Promise(async (resolve, reject) => {
+        console.log(`CallID: ${callId}; endpoint: ${endpoint}; method: ${method}; body: ${body}; headers: ${headers}`)
+        const tx = await contractWithSigner.createApiCall(callId, endpoint, method, body, headers, overrides)
+        console.log(tx)     
       
-      const isTxnMined = async (txnHash) => {
-        const txnreceipt = await provider.getTransactionReceipt(txnHash)
-        if (txnreceipt) {
-          if (txnreceipt.blockNumber) {
-            console.log('Txn Block: ', txnreceipt.blockNumber)
-            console.log('Txn: ', txnreceipt)
+        const isTxnMined = async (txnHash) => {
+          const txnreceipt = await provider.getTransactionReceipt(txnHash)
+          if (txnreceipt) {
+            if (txnreceipt.blockNumber) {
+              console.log('Txn Block: ', txnreceipt.blockNumber)
+              console.log('Txn: ', txnreceipt)
   
-            contractWithSigner.on('resultsRcvd', async(rcvd) => {
-              if (rcvd) {
-              
-                contractWithSigner.provider.once('block', async () => {
-                  const cid = await contractWithSigner.getResults(callId)
-                  console.log(cid)                     
-                  return cid             
-                })
-                
-              }
-            })
+              contractWithSigner.on('resultsRcvd', async(rcvd) => {
+                if (rcvd) {              
+                  contractWithSigner.provider.once('block', async () => {
+                    const cid = await contractWithSigner.getResults(callId)
+                    console.log(cid)                     
+                    resolve(cid)           
+                  })
+                }
+              })
+            }
+          } else {
+            console.log('waiting....')
+            setTimeout(() => { isTxnMined(txnHash), 500})
           }
-        }
-        else {
-          console.log('waiting....')
-          setTimeout(() => { isTxnMined(txnHash), 500})
-        }
-      }
-      isTxnMined(tx.hash)
-  }  
+        } 
+        isTxnMined(tx.hash)
+      })
+    } 
+
     let endpointParams = `${endpoint}&q=${searchText}&api_key=${APIKEY}`    
     let epoch = Date.now()
     let callId = parseInt(epoch+searchText)
     console.log(callId)
   
-    try {
-      const cid = await invokeApi(callId,endpointParams, 'GET', '', '')
-      if (cid !== undefined|'') {
-        const url = `/result/${cid}`
+    invokeApi(callId,endpointParams, 'GET', '', '')
+      .then((res) => {
+        const url = `/result/${res}`
         window.location.href = url
-      }       
-    } catch (e) {
-        console.error(e)      
-    }
+      })
+      .catch(e => console.error(e))
+    
+    //}   
     //backend interaction
   }    
   

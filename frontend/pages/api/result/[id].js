@@ -21,8 +21,8 @@ const retrieveFromIpfs = async (cid) => {
 }
 
 export default async function handler(req, res) {
-    const query = req.query.q
- 
+    const query = req.query.id
+    console.log(query) 
     try {
       const searchResult = await retrieveFromIpfs(query)
       res.status(200).json(searchResult);
