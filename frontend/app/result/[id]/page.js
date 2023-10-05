@@ -1,30 +1,35 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useParams} from 'react';
 import axios from 'axios';
-import router from 'next/router'
 
-const DataRenderer = () => {
+
+export default function DataRenderer( {params}){
   const [images, setImages] = useState([]);
   const [videos, setVideos] = useState([]);
   const [organicResults, setOrganicResults] = useState([]);
   const [relatedQuestions, setRelatedQuestions] = useState([]);
-
+  const [query, setQuery] = useState();
+  
   useEffect(() => {
-    // Fetch data from the specified endpoint
-    
+    // Fetch data    
     axios
-      .get(`/api/search?q=${router.query}`)
+      .get(`/api/result/${params.id}`)
       .then((response) => {
         // Extract inline_images, inline_videos, and organic_results from the response
         console.log(response.data)
-        const inlineImages = response.data.inline_images.slice(0, 6); // Display only the first 6 images
-        const inlineVideos = response.data.inline_videos;
-        const organicResultsData = response.data.organic_results;
+        setQuery(response.data.search_parameters.q)
+        try {          
+          const inlineImages = response.data.inline_images.slice(0, 6); // Display only the first 6 images
+          setImages(inlineImages);          
+          const inlineVideos = response.data.inline_videos;
+          setVideos(inlineVideos);
+        } catch (e) {
+          console.error(e)
+        }        
+        const organicResultsData = response.data.organic_results;        
+        setOrganicResults(organicResultsData)
         const relatedQuestionsData = response.data.related_questions;
         setRelatedQuestions(relatedQuestionsData);
-        setImages(inlineImages);
-        setVideos(inlineVideos);
-        setOrganicResults(organicResultsData);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -33,17 +38,22 @@ const DataRenderer = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold m-4 ml-8 mt-8">Image Gallery</h1>
-      <div className="flex flex-wrap">
-        {images.map((image, index) => (
-          <div key={index} className="w-1/8 p-4">
-            <div className="border rounded-lg overflow-hidden" style={{ width: '200px', height: '200px' }}>
+      {images == [] ? 
+      <>
+        <h1 className="text-2xl font-bold m-4 ml-8 mt-8">Image Gallery for {query} </h1>
+          <div className="flex flex-wrap">
+            {images.map((image, index) => (
+            <div key={index} className="w-1/8 p-4">
+              <div className="border rounded-lg overflow-hidden" style={{ width: '200px', height: '200px' }}>
               <img src={image.thumbnail} alt={`Image ${index}`} className="w-full h-full object-cover" />
             </div>
           </div>
-        ))}
-      </div>
-
+          ))}
+        </div>
+      </>
+       : ''}
+    { videos == [] ? 
+    <>
       <h1 className="text-2xl font-bold mt-8 m-4 ml-8">Videos</h1>
       <div className="flex flex-wrap">
         {videos.map((video, index) => (
@@ -57,6 +67,7 @@ const DataRenderer = () => {
           </div>
         ))}
       </div>
+    </> : ''}
 
       
       <h1 className="text-2xl font-bold mt-8 m-4 ml-8">Results</h1>
@@ -88,4 +99,4 @@ const DataRenderer = () => {
   );
 };
 
-export default DataRenderer;
+
