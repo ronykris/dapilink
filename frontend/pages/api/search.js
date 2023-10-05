@@ -1,29 +1,25 @@
-import  invokeApi from './index'
 import dotenv from 'dotenv'
 import { ethers }from 'ethers'
 import * as sapphire from '@oasisprotocol/sapphire-paratime'
 import { spawnSync } from "child_process";
 
-const { abi } = require('./Apilink.json')
+//const { abi } = require('../../Apilink.json')
 dotenv.config()
 
-let epoch = Date.now()
-let callId = parseInt(epoch+text)
-console.log(callId)
 
 let endpoint = 'https://serpapi.com/search.json?engine=google'
 let APIKEY = process.env.API_KEY || ''
 
-let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
-let contractAddr = process.env.CONTRACT
+//let provider = new ethers.providers.JsonRpcProvider("https://testnet.sapphire.oasis.dev")
+//let contractAddr = process.env.CONTRACT
 
-var pvtKey = process.env.CLIENT_KEY || ''
+//var pvtKey = process.env.CLIENT_KEY || ''
 var overrides = {
   value: ethers.utils.parseEther('0.01')
 }
 
 const retrieveFromIpfs = async (cid) => {  
-  const execute = spawnSync('ipfs', ['cat', '--api', '/ip4/35.200.178.102/tcp/8080', `${cid}`], {encoding: 'utf8'})
+  const execute = spawnSync('ipfs', ['cat', '--api', `/ip4/${process.env.IPFS_GATEWAY}/tcp/8080`, `${cid}`], {encoding: 'utf8'})
   if (execute.error) {
     throw new Error("execution error: " + execute.error.message)
   }
@@ -40,10 +36,10 @@ const retrieveFromIpfs = async (cid) => {
   }  
 }
 
-const invokeApi = async (callId, endpoint, method, body, headers) => {    
-    let wallet = sapphire.wrap(new ethers.Wallet(pvtKey, provider))
-    let contract = new ethers.Contract(contractAddr, abi, wallet)
-    let contractWithSigner = contract.connect(wallet)
+const invokeApi = async (callId, endpoint, method, body, headers, contractWithSigner) => {    
+    //let wallet = sapphire.wrap(new ethers.Wallet(pvtKey, provider))
+    //let contract = new ethers.Contract(contractAddr, abi, wallet)
+    //let contractWithSigner = contract.connect(wallet)
     console.log(`CallID: ${callId}; endpoint: ${endpoint}; method: ${method}; body: ${body}; headers: ${headers}`)
     const tx = await contractWithSigner.createApiCall(callId, endpoint, method, body, headers, overrides)
     console.log(tx)     
@@ -78,15 +74,20 @@ const invokeApi = async (callId, endpoint, method, body, headers) => {
 }  
 
 
-const invoke = async(callId, endpoint, method, body, headers) => {      
-    return await invokeApi(callId, endpoint, method, body, headers)
-}
+/*const invoke = async(callId, endpoint, method, body, headers, contractWithSigner) => {      
+    return await invokeApi(callId, endpoint, method, body, headers, contractWithSigner)
+}*/
 
 export default async function handler(req, res) {
     const query = req.query.q
+    const signer = req.query.s
     let endpointParams = `${endpoint}&q=${query}&api_key=${APIKEY}`    
+    let epoch = Date.now()
+    let callId = parseInt(epoch+query)
+    console.log(callId)
+
     try {
-      const searchResult = await invoke(callId,endpointParams, 'GET', '', '')
+      const searchResult = await invokeApi(callId,endpointParams, 'GET', '', '', signer)
       res.status(200).json(searchResult);
     } catch (e) {
       console.error(e)

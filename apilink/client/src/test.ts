@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 let epoch: number = Date.now()
-let text: string = 'Roger Binny'
+let text: string = 'roger binny'
 let callId: number = parseInt(epoch+text)
 console.log(callId)
 

@@ -1,19 +1,23 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useParams} from 'react';
 import axios from 'axios';
-import router from 'next/router'
 
-const DataRenderer = () => {
+
+export default function DataRenderer( {params}){
   const [images, setImages] = useState([]);
   const [videos, setVideos] = useState([]);
   const [organicResults, setOrganicResults] = useState([]);
   const [relatedQuestions, setRelatedQuestions] = useState([]);
-
+  
+  /*
+  const response = await fetch(`/api/fetchData?q=${cid}`)
+  const results = await response.json()
+  console.log(results)
+*/
   useEffect(() => {
-    // Fetch data from the specified endpoint
-    
+    // Fetch data    
     axios
-      .get(`/api/search?q=${router.query}`)
+      .get(`/api/fetchData?q=${params.id}`)
       .then((response) => {
         // Extract inline_images, inline_videos, and organic_results from the response
         console.log(response.data)
@@ -33,7 +37,7 @@ const DataRenderer = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold m-4 ml-8 mt-8">Image Gallery</h1>
+      <h1 className="text-2xl font-bold m-4 ml-8 mt-8">Image Gallery for {params.id} </h1>
       <div className="flex flex-wrap">
         {images.map((image, index) => (
           <div key={index} className="w-1/8 p-4">
@@ -88,4 +92,4 @@ const DataRenderer = () => {
   );
 };
 
-export default DataRenderer;
+
