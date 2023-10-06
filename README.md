@@ -30,6 +30,44 @@ For building DSearch, we constructed a very complicated infrastructure in the ba
 4. **Augmenting the Oasis Network:** API Link enhances the overall value proposition of the Oasis Network by making it more versatile and attractive to developers. It extends the network's capabilities, making it an ideal choice for projects that require privacy, security, and seamless integration with real-world data sources.
 
 ## How we built it
+**Dapilink** is an open source oracle for sapphire that doesn't need chainlink support to talk to the external world. **Dsearch is an use case of Dapilink** to perform anonymous and secure internet search without the fear of being tracked and/or search history being re purposed.
+
+Dapilink has 3 primary modules
+1. The client 
+2. The contract
+3. The nodes 
+
+Let's look at how each module operates:
+
+### The client 
+- the client is the end user facing app that accepts the api specifications  (endpoint, params, body, headers and method) 
+- the client interacts with the sapphire contract to mutate the state of the contract with the api spec
+- it listens on events to detect the completion of the job
+- retrieves the cid from the contract and fetches the data from the ipfs gateway 
+
+### The contract 
+Aka the brain of this tool. It is the backbone of this implementation. In nutshell it is responsible for the following operations
+- relayer
+- credential mgr 
+- node manager
+
+Below is how the contract is made to work
+- it takes the user supplied api specifications and updates a structure
+- generates unique string to identify the request and updates a mapping with the specifications 
+- it queries the state to fetch an ID of the node to carry out the api invocation after authentication 
+- when the node rverts with the data it updates the state with the cid of the search results
+- the client retrieves the cid to fetch the results
+- the contract currently runs on sapphire testnet 
+
+### The nodes  
+Aka the oracle are individual nodejs services that does the following
+- performs a login to the contract and registers it self
+- it listens on events from the contract to perform authentication before triggering the job
+- upon authentication it triggers the api request
+- fetches the api response data and uploads to ipfs through a self hosted gateway
+- updates the state of the contract with the cid of the uoloaded data
+
+Each node is a VM in Google cloud as of now. But it can be any container hosted anywhere as long as it has an active internet connection
 
 ## Challenges we ran into
 Building DSearch was not an easy task. We encountered several challenges, but with the help of mentors & rigourous learning we landed our successful error-free project. Let's delve deep into the technical details of the challenges faced while building DSearch:
@@ -73,3 +111,8 @@ Here are the accomplishments we're proud of in the development of DSearch:
 
 2. **Scaling Infrastructure for Greater Accessibility:**
   To accommodate a growing user base and increased demand, our next focus is to make the API Link infrastructure more scalable. We plan to expand the network of decentralized nodes that power DSearch, ensuring that the search engine can handle a higher volume of queries and maintain responsiveness even during peak usage. Scalability enhancements will be essential to support DSearch's continued growth and accessibility for users worldwide.
+
+3. **Build an Sdk for Dapilink**
+Dapilink is a handy implementation of a confidential oracle in sapphire. Sapphire contract controls everybit of the nodes in the oracle. This could be an efficient way to bring in support for Web2 use cases in web3 while maintaining confidentiality. 
+
+
