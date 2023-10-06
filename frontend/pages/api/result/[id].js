@@ -3,7 +3,9 @@ import { spawnSync } from "child_process";
 dotenv.config()
 
 const retrieveFromIpfs = async (cid) => {  
-  const execute = spawnSync('ipfs', ['cat', '--api', `/ip4/${process.env.IPFS_GATEWAY}/tcp/8080`, `${cid}`], {encoding: 'utf8'})
+  const response = await fetch(`http://${process.env.IPFS_GATEWAY}:8080/ipfs/${cid}`)
+  const data = await response.json()
+  /*const execute = spawnSync('ipfs', ['cat', '--api', `/ip4/${process.env.IPFS_GATEWAY}/tcp/8080`, `${cid}`], {encoding: 'utf8'})
   if (execute.error) {
     throw new Error("execution error: " + execute.error.message)
   }
@@ -17,7 +19,9 @@ const retrieveFromIpfs = async (cid) => {
   } catch (e) {
     console.error(e)
     return null
-  }  
+  }  */
+  console.log(data)
+  return data
 }
 
 export default async function handler(req, res) {

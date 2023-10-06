@@ -39,4 +39,4 @@ const installIpfs = async () => {
     }
 }
 
-installIpfs()
+export default installIpfs()
