@@ -33,7 +33,7 @@ const triggerJob = async (endpoint: string, method: string): Promise<Object> => 
 
 const jsonToFile = async (jsonObj: object, id: string): Promise<string> => {    
     const buffer = Buffer.from(JSON.stringify(jsonObj))
-    const filePath = `/tmp/ipfs-docker-staging/${id}.json`
+    const filePath = `${process.env.REPO}/${id}.json`
     fs.writeFileSync(filePath, buffer)    
     return filePath
 }
@@ -69,6 +69,11 @@ const invoke = async () => {
         console.log(status + ',' + id)
         if (status === true) {        
             let node = await contractWithSigner.getChosenNode(id)
+            if (node._hex === 0x00) {
+                contractWithSigner.provider.once('block', async() => {
+                    node = await contractWithSigner.getChosenNode(id)
+                })
+            }
             console.log(node._hex)
             console.log(process.env.NODEID)
             if ( node._hex === process.env.NODEID ) {
